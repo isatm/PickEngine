@@ -1,82 +1,44 @@
+body{
+  font-family: sans-serif;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(106, 118, 158);
+}
+
 header {
-  padding: 1rem;
-  background-color: #343a40;
-  color: white;
-  border-bottom: 1px solid #e5e5e5;
+  justify-content: center; 
+  display: flex; /*Organizar horizontalmente*/
+  min-height: 10px; /*Altura de recuadro*/
+  background-color: rgb(20, 23, 37); /*color*/
+  align-items: center; /*centro de*/
+  padding: 10px;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.nav-link {
-  color: #adb5bd;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  text-decoration: none;
-}
-
-.nav-link:hover {
-  color: white;
-}
-
-.nav-link.active {
-  color: white;
-}
-
-.form-control {
-  background-color: #343a40;
-  color: white;
-  border: 1px solid #ced4da;
-  padding: 0.5rem;
-  width: 200px;
-  border-radius: 5px;
-}
-
-.form-control:focus {
-  background-color: #343a40;
-  color: white;
-  border-color: #6c757d;
-}
-
-.btn-outline-light {
-  border-color: #6c757d;
-  color: #6c757d;
-  padding: 0.5rem 1rem;
-  font-size: 0.875rem;
-}
-
-.btn-outline-light:hover {
-  background-color: #6c757d;
-  color: white;
-}
-
-.btn-warning {
-  color: white;
-  background-color: #ffc107;
-  padding: 0.5rem 1rem;
-  font-size: 0.875rem;
-  border: none;
-}
-
-.btn-warning:hover {
-  background-color: #e0a800;
-}
-
-.text-end {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-}
-
-header a {
+.logo{
+  color: rgb(139, 129, 129);
   display: flex;
   align-items: center;
-  text-decoration: none;
+}
+
+.logo img{
+  height: 50px;
+  margin-right: 10px;
+}
+
+nav a{
+  font-weight: 100;
+  padding-right: 15px;
+}
+
+nav a:hover{
   color: white;
 }
 
-header a svg {
-  margin-right: 0.5rem;
+@media (max-width:700px){
+  header{
+    flex-direction: column;
+  }
 }

@@ -1,12 +1,14 @@
 import Header from './components/header'
+import Body from './components/body'
 import './App.css'
 
 function App() {
-  return(
+  return (
     <>
-    <Header/>
+      <Header />
+      <Body />
     </>
-  ) 
+  )
 }
 
 export default App
