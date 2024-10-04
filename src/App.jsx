@@ -7,7 +7,7 @@ import './App.css'
 function App() {
   return (
     <>
-      <Header />
+      <Header2 />
       <Home />
       <Footer />
     </>

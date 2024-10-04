@@ -1,36 +1,78 @@
 .header {
     display: flex;
-    justify-content: space-between; /* Espacia los elementos */
-    align-items: center; /* Alinea verticalmente los elementos */
-    padding: 10px 20px;
-    background-color: #343a40;
-    color: white;
-    border-bottom: 1px solid #e5e5e5;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1d1b1b;
   }
   
   .logo-container {
-    flex: 1; /* Ocupa espacio hacia la izquierda */
+    display: flex;
+    align-items: center;
   }
   
   .logo {
-    height: 50px; /* Tamaño del logo */
+    width: 100px; /* Ajusta el tamaño del logo si es necesario */
+    height: auto;
   }
   
   .nav-items {
-    flex: 2; /* Ocupa más espacio en el centro */
     display: flex;
-    justify-content: center; /* Centra los textos horizontalmente */
-    gap: 20px;
+    gap: 60px;
+    margin-right: 220px; 
   }
   
   .nav-item {
-    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-icon {
+    width: 30px; /* Ajusta el tamaño de los iconos */
+    height: auto;
+    margin-bottom: 5px; /* Añade espacio entre el icono y el texto */
+  }
+  
+  .nav-item p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #eeeeee;
     cursor: pointer;
+    justify-content: center;
+  }
+
+  .nav-item p:hover {
+    color: rgb(255, 237, 132);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
   .login-register-container {
-    flex: 1; /* Ocupa espacio hacia la derecha */
     display: flex;
-    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .btn-1 {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f1cb4d;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-1:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-1:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
   }
   
