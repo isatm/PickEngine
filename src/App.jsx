@@ -1,12 +1,12 @@
-import Header from './components/header'
-import Body from './components/body'
+import Header from './components/molecules/Header/header'
+import Home from './components/pages/home'
 import './App.css'
 
 function App() {
   return (
     <>
       <Header />
-      <Body />
+      <Home />
     </>
   )
 }

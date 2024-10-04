@@ -3,10 +3,13 @@ import './Body.css';
 export default function Body() {
   return (
     <div className="body-container">
-      <div className="image-container">
-        <div className="content">
-          <p className="description">
-            Esto es un parrafo de prueba para el apartado IA, entonces es necesario esperar para su completación adecuada con respecto al proyecto actual que se debe entregar
+      <div className="image-container-right">
+        <div className="content-right">
+          <h1 className="titleb">
+          ¿Quieres conocer todo acerca de los autos?
+          </h1>
+          <p className="descriptionb">
+            Ven y prueba nuestra IA especializada en el automovilismo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
           </p>
           <button className="start-button">Iniciar</button>
         </div>

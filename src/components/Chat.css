@@ -1,51 +1,37 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #2b2424; 
-  }
-  
-  .body-container {
+.body-container {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     height: 100vh;
   }
   
-  .image-container-right {
+  .image-container-center {
     position: relative;
     width: 80%; 
     height: 80vh; 
-    background-image: url('pruebaIA.png');
+    background-image: url('Ferrari.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
     overflow: hidden; 
     display: flex;
-    justify-content: flex-end; 
-    align-items: center;
+    justify-content: center; /* Centramos horizontalmente el contenido */
+    align-items: flex-start;  /* Alineamos verticalmente desde el inicio */
     padding: 20px;
-    
   }
   
-  .content-right {
+  .content-center {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: center;     /* Centramos horizontalmente el contenido */
     width: 40%; 
-    margin-top: 150px;
-    margin-right: 150px;
+    margin-top: 500px;       /* Mantenemos el margen superior de 300px */
   }
   
-  .titleb {
+  .description {
     margin-bottom: 20px;
-    font-size: 60px;
-    color: #fff; 
-  }
-
-  .descriptionb {
-    margin-bottom: 50px;
-    font-size: 20px;
+    font-size: 16px;
     color: #fff; 
   }
   
@@ -63,3 +49,5 @@ body {
   .start-button:hover {
     background-color: #0056b3;
   }
+  
+  

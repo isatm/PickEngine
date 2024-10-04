@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2b2424; 
+}
+
+.body-container-IA {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 90vh;
+}
+
+.body-container-3D {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.body-container-CHAT {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.image-container-IA{
+    position: relative;
+    width: 80%; 
+    height: 80vh; 
+    background-image: url('pruebaIA.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    overflow: hidden; 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding: 20px;
+}
+
+.image-container-3D{
+    position: relative;
+    width: 80%; 
+    height: 80vh; 
+    background-image: url('pruebaIA.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    overflow: hidden; 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding: 20px;
+}
+
+.image-container-CHAT{
+    position: relative;
+    width: 80%; 
+    height: 80vh; 
+    background-image: url('pruebaIA.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    overflow: hidden; 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding: 20px;
+}
+
+.content-IA {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 40%; 
+    margin-top: 150px;
+    margin-right: 150px;
+}
+
+.content-3D {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 40%; 
+    margin-top: 150px;
+    margin-right: 750px;
+}
+
+.content-CHAT {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 40%; 
+    margin-top: 150px;
+    margin-right: 450px;      
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 60px;
+    color: #fff; 
+}
+
+.description {
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: #fff; 
+}
+  
+  .start-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .start-button:hover {
+    background-color: #0056b3;
+  }
+
