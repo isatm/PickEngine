@@ -4,6 +4,7 @@ import Logo from '/Logo.png';
 import IaIcon from '/Logo.png'; 
 import ForumIcon from '/Logo.png'; 
 import ModelIcon from '/Logo.png'; 
+import { Link } from 'react-router-dom';
 
 const Header2 = () => {
   return (
@@ -28,7 +29,11 @@ const Header2 = () => {
       </div>
 
       <div className="login-register-container">
-        <a href="login"><button type="button" className="btn-1">Login</button></a>
+        <a href="login">
+            <Link to='/login'>
+                <button type="button" className="btn-1">Login</button>
+            </Link>
+        </a>
         <a href="register"><button type="button" className="btn-1">Sign-up</button></a>
       </div>
     </header>
