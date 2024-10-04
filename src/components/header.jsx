@@ -1,6 +1,6 @@
 import './Header.css'
 
-export default function Header(){  
+export function Header(){  
   return(
       <header className="p-3 text-bg-dark">
         <div className="container">
@@ -20,10 +20,10 @@ export default function Header(){
             </form>
   
             <div className="text-end">
-              <button type="button" className="btn btn-outline-light me-2">Login</button>
-              <button type="button" className="btn btn-warning">Sign-up</button>
+              <button type="button" className="btn btn-outline-light me-2" onClick={() => window.location.href = '/login'}>Login</button>
+              <button type="button" className="btn btn-warning" onClick={() => window.location.href = '/register'}>Sign-up</button>
             </div>
           </div>
         </div>
       </header>
-);};
+  );};
