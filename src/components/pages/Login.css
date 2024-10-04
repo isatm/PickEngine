@@ -8,6 +8,9 @@
     margin: 0;               /* Elimina los márgenes del body */  
     font-family: 'Poppins', sans-serif; /* Aplica la fuente Poppins */
   }
+.iniciar-secion{
+    color: white;
+}
 
 form{
     display: flex;

@@ -14,7 +14,7 @@ return (
                             ¿Quieres conocer todo acerca de los autos?
                         </h1>
                         <p className="description">
-                            Ven y prueba nuestra IA especializada en el automovilismo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                            Ven y prueba nuestra IA especializada en automovilismo.
                         </p>
                         <button className="start-button">Iniciar</button>
                     </div>
@@ -25,10 +25,10 @@ return (
             <div className="image-container-3D">
                 <div className="content-3D">
                     <h1 className="title">
-                        ¿Quieres conocer todo acerca de los autos?
+                        ¿Quiere visualizar tu futuro auto?
                     </h1>
                     <p className="description">
-                        Ven y prueba nuestra IA especializada en el automovilismo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                        Con nuestro apartado de personalización 3D, eso es posible.
                     </p>
                     <button className="start-button">Iniciar</button>
                 </div>
@@ -40,10 +40,10 @@ return (
             <div className="image-container-CHAT">
                 <div className="content-CHAT">
                     <h1 className="title">
-                        ¿Quieres conocer todo acerca de los autos?
+                        ¡Comparte tu afición por los autos!
                     </h1>
                     <p className="description">
-                        Ven y prueba nuestra IA especializada en el automovilismo aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                        Interactua con los fanaticos de los autos de todo el mundo.
                     </p>
                     <button className="start-button">Iniciar</button>
                 </div>

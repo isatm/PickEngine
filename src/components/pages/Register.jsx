@@ -1,8 +1,8 @@
-//import React from 'react';
-import fondo from '../assets/register-background.jpg';
+import fondo from '/register-background.jpg';
+import { Link } from 'react-router-dom';
 import './Register.css';
 
-export function Register() {
+export default function Register() {
     return (
     <div className="register-container">
         <img src={fondo} alt="Imagen de fondo para el registro" className="register-background" />
@@ -25,7 +25,9 @@ export function Register() {
                     <label htmlFor="confirm-password">Confirmar Password</label>
                     <input type="password" id="confirm-password" placeholder="Confirme su contraseña" required />
                 </div>
+                <Link to="/">
                 <button type="submit" className="register-btn">Registrar</button>
+                </Link>
                 <div className="register-form-footer">
                 <p>¿Ya tienes cuenta? <a href="/login">Inicia sesión</a></p>
                 </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 import { Link } from 'react-router-dom';
 import "./Login.css";
 
@@ -8,7 +8,7 @@ export default function Login() {
         <div className="d-flex align-items-center py-4 bg-light body-container">
         <main className="form-signin w-100 m-auto form-container">
             <form>
-            <h1 className="h3 mb-3 fw-normal text-center">Inicia Sesion</h1>
+            <h1 className="iniciar-secion">Inicia Sesion</h1>
             <div className="form-floating mb-3 input-style">
                 <input
                 type="email"
@@ -39,10 +39,12 @@ export default function Login() {
                 </label>
             </div>
             <div className="button-container">
+            <Link to="/">
                 <button className="btn btn-primary w-100 py-2" type="submit">
                 Sign in
-                </button>  
-                <Link to="/">
+                </button> 
+                </Link> 
+                <Link to="/register">
                     <button className="btn btn-primary w-100 py-2" type="submit">
                     Sign up
                     </button>

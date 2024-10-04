@@ -5,6 +5,7 @@ import Header2 from './components/molecules/Header2/header2'
 import Footer from './components/molecules/Footer/footer'
 import Home from './components/pages/home'
 import Login from './components/pages/login'
+import Register from './components/pages/register'
 import './App.css'
 
 const App = () => {
@@ -14,8 +15,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
-
       <Footer />
     </Router>
   )
