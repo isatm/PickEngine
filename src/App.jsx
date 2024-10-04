@@ -1,6 +1,6 @@
-import React from 'react';
+//import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/molecules/Header/header'
+//import Header from './components/molecules/Header/header'
 import Header2 from './components/molecules/Header2/header2'
 import Footer from './components/molecules/Footer/footer'
 import Home from './components/pages/home'
