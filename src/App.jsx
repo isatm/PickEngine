@@ -1,10 +1,10 @@
-import Header from './components/header'
+import Body from './components/login'
 import './App.css'
 
 function App() {
   return(
     <>
-    <Header/>
+      <Body/>
     </>
   ) 
 }
