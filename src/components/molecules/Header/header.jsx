@@ -1,27 +1,24 @@
-import './Header.css';
+import React from 'react';
+import './Header.css'; 
+import MyLogo from '/Logo.png'; 
+import ProfilePic from '/Avatar.png'; 
 
-export default function Header() {
+const Header = () => {
   return (
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      
-      <link rel="stylesheet" href="Header.css"></link>
-      <title>Pagina principal</title>
-    </head>
-    <body>
-      <header>
-        <div className="logo">
-          <img scr='/Logo.png' alt="Logo de empresa"/>
-        </div>
-        <nav>
-          <a href="" className="nav-link">Foro</a>
-          <a href="" className="nav-link">Inteligencia Artificial</a>
-          <a href="" className="nav-link">Modelo 3D</a>
-        </nav>
-      </header>
-    </body>
-    </html>
+    <header className="header">
+      <div className="logo-container">
+        <img src={MyLogo} alt="Logo" className="logo" />
+      </div>
+      <div className="nav-items">
+        <p className="nav-item">IA</p>
+        <p className="nav-item">Forum</p>
+        <p className="nav-item">3D Model</p>
+      </div>
+      <div className="profile-container">
+        <img src={ProfilePic} alt="Profile" className="profile-pic" />
+      </div>
+    </header>
   );
-}
+};
+
+export default Header;
