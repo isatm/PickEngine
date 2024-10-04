@@ -10,7 +10,7 @@ const Header2 = () => {
   return (
     <header className="header">
       <div className="logo-container">
-        <a href="home"><img src={Logo} alt="Logo" className="logo" /></a>
+        <a href="/"><img src={Logo} alt="Logo" className="logo" /></a>
       </div>
 
       <div className="nav-items">
