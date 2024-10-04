@@ -18,6 +18,10 @@
     z-index: -1;
 }
 
+.register-form{
+    font-family: Arial, sans-serif; /* Aplica la fuente Poppins */
+
+}
 /* Contenedor del formulario */
 .register-form-container {
     background-color: #4F4F4F;

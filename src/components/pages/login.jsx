@@ -50,7 +50,6 @@ export default function Login() {
                     </button>
                 </Link>
             </div>
-            <hr/>     
 
             <div className="d-flex justify-content-around">
                 <button className="btn" type="button">
