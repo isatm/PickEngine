@@ -25,12 +25,12 @@ form{
 
 .form-signin {
     font-family: Arial, sans-serif; /* Aplica la fuente Poppins */
-    max-width: 400px; 
+    max-width: 500vh; 
     padding: 7rem;
     background-color: #4F4F4F;  
     border-radius: 10px;      /* Bordes redondeados */
     margin-right: 650px;
-    width: 307px;
+    width: 440px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
@@ -70,23 +70,6 @@ h1 {
 
 .form-check-label{
     color: white;
-}
-.btn-primary {
-    background-color: #ffffff;  
-    border-color: #686868;        
-    font-weight: bold;             
-    margin-left: 2px;              
-    padding: 10px 20px;            
-    border-radius: 5px;          
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    transition: background-color 0.3s, box-shadow 0.3s; 
-}
-
-.btn-primary:hover {
-    background-color: #f0f0f0;    
-    border-color: #ffffffea;      
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
-    cursor: pointer;              
 }
 
 .text-center {

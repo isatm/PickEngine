@@ -1,7 +1,7 @@
 //import React from 'react';
 import { Link } from 'react-router-dom';
 import "./Login.css";
-
+import CustomButton from '../atoms/Button/CustomButton';
 export default function Login() {
   return (
     <body className= "login-body">
@@ -40,24 +40,15 @@ export default function Login() {
             </div>
             <div className="button-container">
             <Link to="/">
-                <button className="btn btn-primary w-100 py-2" type="submit">
-                Sign in
-                </button> 
+            <CustomButton
+                    text = {"Sign in"}
+                />
                 </Link> 
                 <Link to="/register">
-                    <button className="btn btn-primary w-100 py-2" type="submit">
-                    Sign up
-                    </button>
+                <CustomButton
+                    text = {"Sign up"}
+                />
                 </Link>
-            </div>
-
-            <div className="d-flex justify-content-around">
-                <button className="btn" type="button">
-                <i className="fab fa-facebook-f"></i> 
-                </button>
-                <button className="btn" type="button">
-                <i className="fab fa-google"></i> 
-                </button>
             </div>
             </form>
         </main>
@@ -65,3 +56,13 @@ export default function Login() {
     </body>
   );
 }
+
+
+/*<div className="d-flex justify-content-around">
+                <button className="btn" type="button">
+                <i className="fab fa-facebook-f"></i> 
+                </button>
+                <button className="btn" type="button">
+                <i className="fab fa-google"></i> 
+                </button>
+            </div>*/ 
