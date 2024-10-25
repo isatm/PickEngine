@@ -18,8 +18,8 @@
   
   .nav-items {
     display: flex;
-    gap: 60px;
-    margin-right: 220px; 
+    gap: 40px;
+    align-items: center;
   }
   
   .nav-item {
@@ -36,6 +36,7 @@
   }
   
   .nav-item p {
+    font-family: Arial, sans-serif;
     font-size: 16px;
     font-weight: bold;
     color: #eeeeee;
@@ -44,6 +45,7 @@
   }
 
   .nav-item p:hover {
+    font-family: Arial, sans-serif;
     color: rgb(255, 237, 132);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }

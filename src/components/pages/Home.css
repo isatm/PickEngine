@@ -45,7 +45,7 @@
     position: relative;
     width: 80%; 
     height: 80vh; 
-    background-image: url('pruebaIA.png');
+    background-image: url('prueba3D.png');
     background-size: cover;
     background-position: center;
     border-radius: 10px; 
@@ -61,7 +61,7 @@
     position: relative;
     width: 80%; 
     height: 80vh; 
-    background-image: url('pruebaIA.png');
+    background-image: url('pruebaC.png');
     background-size: cover;
     background-position: center;
     border-radius: 10px; 
@@ -78,8 +78,8 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 40%; 
-    margin-top: 150px;
-    margin-right: 150px;
+    margin-top: 50px;
+    margin-right: 30px;
 }
 
 .content-3D {
@@ -87,8 +87,8 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 40%; 
-    margin-top: 150px;
-    margin-right: 750px;
+    margin-top: 50px;
+    margin-right: 700px;
 }
 
 .content-CHAT {
@@ -96,8 +96,8 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 40%; 
-    margin-top: 150px;
-    margin-right: 450px;      
+    margin-top: 50px;
+    margin-right: 30px;     
 }
 
 .title {
