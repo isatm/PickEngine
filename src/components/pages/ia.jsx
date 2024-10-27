@@ -3,46 +3,20 @@ import './ia.css'
 export default function IA() {
     return (
         <div className="container">
-            <main>
-                <section className="car-section">
-                    <div className="likes">
-                        <span className="heart-icon">❤️</span>
-                        <span className="like-count">1</span>
-                    </div>
-                    <h2>Porsche</h2>
-                    <img src="/car.png" alt="Porsche Car" className="car-image" />
-                </section>
-                <section className="options">
-                    <div className="option">
-                        <img src="/spray.png" alt="Paint Icon" />
-                        <p>Paint</p>
-                    </div>
-                    <div className="option">
-                        <img src="/carroceria.png" alt="Body Icon" />
-                        <p>Body</p>
-                    </div>
-                    <div className="option">
-                        <img src="/s.png" alt="Parts Icon" />
-                        <p>Parts</p>
-                    </div>
-                </section>
-
-                <div className="search-gallery-container">
-                    <section className="search-section">
-                        <input type="text" placeholder="Please enter" className="search-input" />
-                        <span className="search-icon">🔍</span>
-                    </section>
-
-                    <section className="gallery-section">
-                        {Array(6).fill().map((_, index) => (
-                            <div key={index} className="gallery-item">
-                                <img src="/car.png" alt="Car Model" className="gallery-car-image" />
-                                <span className="heart-icon">❤️</span>
-                            </div>
-                        ))}
-                    </section>
-                </div>
-            </main>
+          <div className="content">
+            <h1 className="main-title">PickEngine</h1>
+            <h2 className="subtitle">IA</h2>
+            <div className="button-group">
+              <button className="info-button">¿Qué es un auto?</button>
+              <button className="info-button">¿Cuándo hacer cambio de aceite?</button>
+              <button className="info-button">Estrategias para el ahorro de combustible</button>
+              <button className="info-button">¿Cómo saber la presión ideal para mis llantas?</button>
+            </div>
+            <div className="search-bar">
+              <input type="text" placeholder="Please enter" />
+              <button className="search-button">🔍</button>
+            </div>
+          </div>
         </div>
-    );
+      );
 }
