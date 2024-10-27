@@ -6,7 +6,6 @@ import Footer from './components/molecules/Footer/footer'
 import Home from './components/pages/home'
 import Login from './components/pages/login'
 import Register from './components/pages/register'
-import './App.css'
 
 const App = () => {
   return (
