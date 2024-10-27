@@ -6,6 +6,7 @@ import Footer from './components/molecules/Footer/footer'
 import Home from './components/pages/home'
 import Login from './components/pages/login'
 import Register from './components/pages/register'
+import Modelos from './components/pages/3d'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/3d" element={<Modelos />} />
       </Routes>
       <Footer />
     </Router>
