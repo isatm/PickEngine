@@ -1,0 +1,11 @@
+.generalNav{
+    display: flex;
+    background-color: #1d1b1b;
+    max-width: 600px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    input{
+        width: 600px;
+    }
+}

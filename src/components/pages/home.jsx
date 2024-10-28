@@ -45,7 +45,7 @@ return (
                     <p className="description">
                         Interactua con los fanaticos de los autos de todo el mundo.
                     </p>
-                    <button className="start-button">Iniciar</button>
+                        <button className="start-button">Iniciar</button>
                 </div>
             </div>
         </div>

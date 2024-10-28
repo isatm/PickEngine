@@ -1,0 +1,82 @@
+.generalPost {
+    background-color: #181515;
+    border-radius: 8px;
+    font-family: Trebuchet MS, sans-serif;
+    width: 800px;
+}
+
+.headerPost {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px;
+    background-color: #181515;
+
+    .postUsuario {
+        display: flex;
+        flex-direction: row; 
+        align-items: center; 
+
+        .imageAvatar {
+            margin: 8px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        h2 {
+            color: rgb(231, 226, 226);
+            font-size: 15px;
+        }
+    }
+
+    h3 {
+        color: rgb(252, 226, 154);
+        font-size: 12px;
+    }
+}
+
+.postContenido {
+    padding: 15px 20px;
+    background-color: #1c1c1c;
+    flex-direction: column;
+    overflow: hidden;
+
+    .postTexto {
+        max-width: 600px;
+        font-size: 15px;
+        line-height: 1.6;
+        color: #b8b3b3;
+        text-align: justify;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    .postImagen {
+        width: 100%; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+
+        .imagePost {
+            width: 100%; 
+            height: auto; 
+            object-fit: cover;
+            display: block; 
+        }
+    }
+}
+
+.footerPost{
+    background-color: #1c1c1c;
+    display: flex; 
+    align-items: center; 
+    height: 20px; /* Define una altura para el footer */
+    h2{
+        margin: 10px;
+        font-size: 15px;
+        color:rgb(224, 222, 217)
+        
+    }
+}

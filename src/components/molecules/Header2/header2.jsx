@@ -20,7 +20,9 @@ const Header2 = () => {
           </Link>
         </div>
         <div className="nav-item">
+          <Link to='/forum'>
           <p>Forum</p>
+          </Link>
         </div>
         <div className="nav-item">
           <Link to='/3d'>

@@ -8,6 +8,7 @@ import Login from './components/pages/login'
 import Register from './components/pages/register'
 import Modelos from './components/pages/3d'
 import IA from './components/pages/ia'
+import Forum from './components/pages/forum'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/3d" element={<Modelos />} />
         <Route path="/ia" element={<IA />} />
+        <Route path="/forum" element={<Forum />} />
       </Routes>
       <Footer />
     </Router>
