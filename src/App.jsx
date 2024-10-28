@@ -7,6 +7,7 @@ import Home from './components/pages/home'
 import Login from './components/pages/login'
 import Register from './components/pages/register'
 import Modelos from './components/pages/3d'
+import IA from './components/pages/ia'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/3d" element={<Modelos />} />
+        <Route path="/ia" element={<IA />} />
       </Routes>
       <Footer />
     </Router>

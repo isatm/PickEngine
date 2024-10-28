@@ -2,7 +2,8 @@
     background-color: #4d4d4d;
     color: white;
     font-family: Arial, sans-serif;
-    height: 100vh;
+    flex: 1; /* Ocupa el espacio restante */
+    width: 100%; /* Ajusta al ancho del contenedor */
 }
 
 main {
@@ -18,7 +19,7 @@ main {
     padding: 20px;  
     border-radius: 8px;
     text-align: center;
-    width: 60%;
+    width: 80%;
     margin-top: 2vh;
 }
 

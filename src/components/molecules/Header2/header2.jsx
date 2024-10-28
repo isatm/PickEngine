@@ -15,7 +15,9 @@ const Header2 = () => {
 
       <div className="nav-items">
         <div className="nav-item">
-          <p>IA</p>
+        <Link to='/ia'>
+            <p>IA</p>
+          </Link>
         </div>
         <div className="nav-item">
           <p>Forum</p>
