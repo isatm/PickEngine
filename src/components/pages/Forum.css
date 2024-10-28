@@ -1,16 +1,23 @@
 .bodyForum {
-	background: aqua;
-	display: flex; 
-    justify-content: space-between;
-    align-items: center;
-	.personal {
-		background-color: #bdff91; 
-		padding: 10px; 
-		margin: 5px; 
+    
+	.fixedPositions{
+		display: flex;
+		justify-content: space-between; 
+		position: fixed;
+		.personal {
+			background-color: #1f201d; 
+			padding: 10px; 
+			margin: 5px; 
+		}
 	}
 	.publicaciones{
-		background-color: #f51abe; 
-		justify-content: center;
+		background-image: url('fondoForum.png');
+		flex-direction: column;
+		display: flex;
+		justify-content: center; 
 		align-items: center;
+		.Post{
+			padding: 100px;
+		}
 	}
 }

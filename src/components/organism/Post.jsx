@@ -1,6 +1,6 @@
 import './Post.css' 
 
-export default function Post({Name, Text}) {
+export default function Post({Name, Text, Logo, Fecha}) {
   return (
     <main className='generalPost'>
         <header className = 'headerPost'>
@@ -9,7 +9,7 @@ export default function Post({Name, Text}) {
             <h2>{Name}</h2>
           </div>
           <div className = 'postFecha'>
-            <h3>24/10/2024</h3>
+            <h3>{Fecha}</h3>
           </div>
         </header>
         <section className = 'postContenido'>
@@ -19,7 +19,7 @@ export default function Post({Name, Text}) {
             </p>
           </div>
           <div className = 'postImagen'>
-            <img src="CarroFotografia.jpg" alt="Logo" className="imagePost" />
+          {Logo && <img src={Logo} alt="Post" className="imagePost" />}
           </div>
         </section>
         <footer className = 'footerPost'>

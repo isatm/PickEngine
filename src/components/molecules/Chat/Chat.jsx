@@ -4,21 +4,21 @@ import CustomMessage from '../../atoms/Message/CustomMessage'
 export default function Chat() {
   return (
     <main className='generalChat'>
-        <header className = 'headerChat'>
-            <h1>Chat</h1>
-        </header>
+        <div className = 'headerChat'>
+            <h1>Mensajes</h1>
+        </div>
         <section className = 'chats'>
             <CustomMessage
                 Name = {"Jero"}
                 Text = {"Buenos días"}
             />
             <CustomMessage
-                Name = {"Jero"}
-                Text = {"Buenos días"}
+                Name = {"Isa"}
+                Text = {"Hey ya tengo tu pedido"}
             />
             <CustomMessage
-                Name = {"Jero"}
-                Text = {"Buenos días"}
+                Name = {"Juanma"}
+                Text = {"Jajajjaja"}
             />
         </section>
         <footer className = 'footerChat'>

@@ -7,22 +7,36 @@ import Post from '../organism/post';
 export default function Forum() {
     return (
         <body className = 'bodyForum'>
-            <section className = 'personal'>
-            <CustomButton
-                text = {"Crear una nueva publicación"}
-            />
-            <Chat/>
+            <section className = 'fixedPositions'>
+                <div className = 'personal'>
+                    <CustomButton
+                        text = {"Crear una nueva publicación"}
+                    />
+                    <Chat/>
+                    
+                </div>
             </section>
             <section className = 'publicaciones'>
-            <CustomNav
-                text = {"Crear una nueva publicación"}
-            />
-            <Post
-                Name = "Jero"
-                Text = "Ostias chavales, yo opino que debemos de comprar más bmw para poder dominar el mundo de tal manera que nadie nos detenga."
-            />
-            </section>
-            <section className = 'etiquetas'>
+                <CustomNav
+                    text = {"¿Qué desea encontrar?"}
+                />
+                <Post
+                    Name = "JuanAutoLover"
+                    Text = "Los carros deportivos son los mejores. :)."
+                    Logo = "CarroFotografia.jpg"
+                    Fecha = "25-10-2024"
+                />
+                <Post
+                    Name = "Pepito123si"
+                    Text = "Esto es un texto demasiado largo para poder complementar este bloque y dar un ejemplo de como se vería :D."
+                    Fecha = "02-08-2024"
+                />
+                <Post
+                    Name = "Isa"
+                    Text = "Los bmw son los mejores"
+                    Logo = "bmw.jpg"
+                    Fecha = "15-07-2024"
+                />
             </section>
         </body>
     );

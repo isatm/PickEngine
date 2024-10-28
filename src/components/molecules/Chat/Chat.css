@@ -1,19 +1,23 @@
 .generalChat{
-    background-color: rgb(192, 192, 235);
+    background-color: #1f201d; 
     .headerChat{
         h1{
             text-align: center;
             align-items: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: rgb(238, 191, 62);
         }
     }
     .footerChat{
-        background-color: rgb(122, 122, 204);
+        background-color: #1f201d; 
         display: flex; 
         justify-content: flex-end;
         .image {
-            margin: 8px;
-            width: 50px;
-            height: 50px;
+            margin: 5px;
+            width: 30px;
+            height: 30px;
         }
     }
 }
