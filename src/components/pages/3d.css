@@ -15,10 +15,11 @@ main {
 .car-section {
     background-color: #fff;
     color: #333;
-    padding: 20px;
+    padding: 20px;  
     border-radius: 8px;
     text-align: center;
     width: 60%;
+    margin-top: 2vh;
 }
 
 .car-image {
