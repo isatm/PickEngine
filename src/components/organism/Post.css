@@ -1,0 +1,42 @@
+.generalPost{
+    width: 600px;
+    .headerPost{
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 10px 20px;
+        background-color: #1c1c1c;
+        .postUsuario{
+            display: flex;
+            flex-direction: row; 
+            align-items: center; 
+            .imageAvatar {
+                margin: 8px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+    }
+    .postContenido{
+        padding: 15px 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        overflow: hidden;
+        
+        .postTexto{
+            max-width: 600px;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+        .postImagen{
+            width: 100%; 
+            height: auto;
+            object-fit: cover; 
+        }
+    }
+}
