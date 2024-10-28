@@ -23,7 +23,7 @@ export default function Post({Name, Text, Logo, Fecha}) {
           </div>
         </section>
         <footer className = 'footerPost'>
-          
+          <h2>Comentarios(69)</h2>
         </footer>
     </main>
   )

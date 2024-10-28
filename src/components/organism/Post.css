@@ -9,7 +9,7 @@
     justify-content: space-between; 
     align-items: center; 
     padding: 10px 20px;
-    background-color: #1c1c1c;
+    background-color: #181515;
 
     .postUsuario {
         display: flex;
@@ -64,5 +64,18 @@
             object-fit: cover;
             display: block; 
         }
+    }
+}
+
+.footerPost{
+    background-color: #1c1c1c;
+    display: flex; 
+    align-items: center; 
+    height: 20px; /* Define una altura para el footer */
+    h2{
+        margin: 10px;
+        font-size: 15px;
+        color:rgb(224, 222, 217)
+        
     }
 }

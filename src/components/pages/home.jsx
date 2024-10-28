@@ -1,5 +1,5 @@
 //import React from 'react';
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Home.css'
 
 export default function Home() {
@@ -43,9 +43,11 @@ return (
                         ¡Comparte tu afición por los autos!
                     </h1>
                     <p className="description">
-                        Interactua con los fanaticos de los autos de todo el mundo.
+                            Interactua con los fanaticos de los autos de todo el mundo.
                     </p>
-                    <button className="start-button">Iniciar</button>
+                    <Link to='/forum'>
+                        <button className="start-button">Iniciar</button>
+                    </Link>
                 </div>
             </div>
         </div>
