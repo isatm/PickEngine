@@ -6,7 +6,7 @@ import Footer from './components/molecules/Footer/footer'
 import Home from './components/pages/home'
 import Login from './components/pages/login'
 import Register from './components/pages/register'
-import Form from './components/pages/form'
+import Forum from './components/pages/forum'
 
 const App = () => {
   return (
@@ -15,8 +15,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/forum" element={<Forum />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/form" element={<Form />} />
       </Routes>
       <Footer />
     </Router>

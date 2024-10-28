@@ -1,0 +1,19 @@
+.generalChat{
+    background-color: rgb(192, 192, 235);
+    .headerChat{
+        h1{
+            text-align: center;
+            align-items: center;
+        }
+    }
+    .footerChat{
+        background-color: rgb(122, 122, 204);
+        display: flex; 
+        justify-content: flex-end;
+        .image {
+            margin: 8px;
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
