@@ -25,7 +25,7 @@ export const getUserById = async (req, res) => {
 export const createUser = async (req, res) => {
     const { nombre1, nombre2, apellido1, apellido2, nickname, correo, contrasena } = req.body;
     try {
-      const [results] = await connection.query('INSERT INTO Usuario (nombre1, nombre2, apellido1, apellido2, nickname, correo, contrasena) VALUES (?, ?, ?, ?, ?, ?, ?)', [nombre1, nombre2, apellido1, apellido2, nickname, correo, contrasena]);
+      const [results] = await connection.query('INSERT INTO Usuario (nombre1, nombre2, apellido1, apellido2, nick_name, correo, contrasena) VALUES (?, ?, ?, ?, ?, ?, ?)', [nombre1, nombre2, apellido1, apellido2, nickname, correo, contrasena]);
       res.json(results);
     } catch (error) {
       res.json({ error: error.message });
