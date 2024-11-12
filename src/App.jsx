@@ -9,7 +9,7 @@ import Register from './components/pages/register'
 import Modelos from './components/pages/3d'
 import IA from './components/pages/ia'
 import Forum from './components/pages/forum'
-
+import Cuenta from './components/pages/Cuenta';
 const App = () => {
   return (
     <Router>
@@ -21,6 +21,7 @@ const App = () => {
         <Route path="/3d" element={<Modelos />} />
         <Route path="/ia" element={<IA />} />
         <Route path="/forum" element={<Forum />} />
+        <Route path="/micuenta" element={<Cuenta />} />
       </Routes>
       <Footer />
     </Router>
