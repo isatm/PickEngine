@@ -7,37 +7,40 @@
 }
 
 .contenido-cuenta{
-    padding: 15vw 10vh  ;
+    padding: 6vw 10vh;
     background-color: #1c1c1c;
     flex-direction: column;
     overflow: hidden;
     display: flex;
     align-items: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
-.info{
-    display: flex;
-    align-items: center;
 .info-personal{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     flex-direction: column;
-}
-.imgFondo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-
 }
 .imageAvatar {
     margin: 8px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit: cover;    
 }
+.info{
+    display: flex;
+}
+
+.boton-cuenta{
+    margin-top: 2px;
+}
+
+.nombre{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .info-cuenta{
     display: flex;

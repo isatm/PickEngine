@@ -21,7 +21,7 @@ const App = () => {
         <Route path="/3d" element={<Modelos />} />
         <Route path="/ia" element={<IA />} />
         <Route path="/forum" element={<Forum />} />
-        <Route path="/micuenta" element={<Cuenta />} />
+        <Route path="/cuenta" element={<Cuenta />} />
       </Routes>
       <Footer />
     </Router>

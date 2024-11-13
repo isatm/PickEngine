@@ -1,12 +1,15 @@
 import './Post.css' 
+import { Link } from 'react-router-dom';
 
 export default function Post({Name, Text, Logo, Fecha}) {
   return (
     <main className='generalPost'>
         <header className = 'headerPost'>
           <div className = 'postUsuario'>
-            <img src="Avatar.png" alt="Logo" className="imageAvatar" />
+            <img src="Avatar.png" alt="Logo" className="imageAvatar"/>
+            <Link to='/cuenta'>
             <h2>{Name}</h2>
+            </Link>
           </div>
           <div className = 'postFecha'>
             <h3>{Fecha}</h3>
