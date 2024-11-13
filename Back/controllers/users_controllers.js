@@ -37,9 +37,9 @@ export const verifyUser = async (req, res) => {
   try {
     const [results] = await connection.query('SELECT id FROM Usuario WHERE correo = ? AND contrasena = ?', [correo, contrasena]);
     if (results.length > 0) {
-    res.json({ userId: results[0].id });
+      res.json({ userId: results[0].id });
     } else {
-    res.json({ userId: -1 });
+      res.json({ userId: -1 });
     }
   } catch (error) {
     res.json({ error: error.message });
