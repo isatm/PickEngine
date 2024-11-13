@@ -1,8 +1,12 @@
 import './CustomButton.css' 
-export default function CustomButton({ text }) {
+import { Link } from 'react-router-dom';
+
+export default function CustomButton({ text, redirect }) {
   return (
-    <button>
-        { text }
-    </button>
+    <Link to={redirect}>
+      <button>
+          { text }
+      </button>
+    </Link>
   )
 }

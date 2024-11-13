@@ -32,11 +32,9 @@ const Header2 = () => {
       </div>
 
       <div className="login-register-container">
-        <a href="login">
-            <Link to='/login'>
-                <button type="button" className="btn-1">Login</button>
-            </Link>
-        </a>
+        <Link to='/login'>
+            <button type="button" className="btn-1">Login</button>
+        </Link>
         <a href="register"><button type="button" className="btn-1">Sign-up</button></a>
       </div>
     </header>

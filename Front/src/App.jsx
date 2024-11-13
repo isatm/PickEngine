@@ -9,6 +9,7 @@ import Register from './components/pages/register'
 import Modelos from './components/pages/3d'
 import IA from './components/pages/ia'
 import Forum from './components/pages/forum'
+import Post from './components/pages/Post.jsx'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/3d" element={<Modelos />} />
         <Route path="/ia" element={<IA />} />
         <Route path="/forum" element={<Forum />} />
+        <Route path="/post" element={<Post />} />
       </Routes>
       <Footer />
     </Router>

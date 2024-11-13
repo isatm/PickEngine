@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import './Forum.css'
 import CustomButton from '../atoms/Button/CustomButton';
 import Chat from '../molecules/Chat/Chat';
@@ -11,7 +13,9 @@ export default function Forum() {
                 <div className = 'personal'>
                     <CustomButton
                         text = {"Crear una nueva publicación"}
+                        redirect={"/post"}
                     />
+                    
                     <Chat/>
                     
                 </div>
