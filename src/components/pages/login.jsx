@@ -56,13 +56,3 @@ export default function Login() {
     </body>
   );
 }
-
-
-/*<div className="d-flex justify-content-around">
-                <button className="btn" type="button">
-                <i className="fab fa-facebook-f"></i> 
-                </button>
-                <button className="btn" type="button">
-                <i className="fab fa-google"></i> 
-                </button>
-            </div>*/ 

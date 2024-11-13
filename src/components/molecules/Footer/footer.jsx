@@ -1,9 +1,13 @@
 import './Footer.css';
+
 const Footer = () => {
     return (
         <footer className='footer'>
-            <div>
-            <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+            <div className = 'links'>
+                <p>&copy; 2024 PickEngine. Todos los derechos reservados.</p>
+                <a href="/privacyp" target="_blank" rel="noopener noreferrer">
+                    <p>Políticas de Privacidad</p>
+                </a>
             </div>
         </footer>
     );
