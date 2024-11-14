@@ -24,7 +24,7 @@ export const verify = (req, res) => {
     if (token) {
         try {
             const userData = jwt.verify(token, secretKey);
-            res.json({login: true, data: userData});
+            res.json({login: true, userData: userData});
         } catch (error) {
             res.json({ login: false, error: error.message });
         }

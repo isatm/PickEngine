@@ -3,17 +3,48 @@ import CustomButton from "../atoms/Button/CustomButton";
 
 import { useState } from 'react';
 import axios from 'axios';
+import { redirect } from "react-router-dom";
 
 const API_URL = 'http://localhost:3000/api/post/publish';
+const AUTH_URL = 'http://127.0.0.1:3000/auth/login/verify';
+
+const getUserId = () => {
+
+}
 
 export default function Post() {
     const [image, setImage] = useState(null);
     const [description, setDescription] = useState("");
     const [tags, setTags] = useState("");
-    const [userId, setUserId] = useState(1); //Prueba, ELIMINAR
+
+    const getUserId = async () => {
+        const token = localStorage.getItem('token');
+        if (token) {
+            try {
+                const response = await axios.post(AUTH_URL, { token: token });
+                if (response.data.login) {
+                    return response.data.userData.userId;
+                } else {
+                    alert('Token inválido, por favor inicia sesión nuevamente.');
+                    return null;
+                }
+            } catch (error) {
+                console.error('Error al verificar el token:', error);
+                return null;
+            }
+        } else {
+            alert('No se encontró token, por favor inicia sesión.');
+            return null;
+        }
+    };
 
     const handlePublish = async () => {
-        console.log('Publicando...');
+        const userId = await getUserId();
+        if (!userId) {
+            alert('No se pudo obtener el ID del usuario, Por favor inicia sesión.');
+            return;
+        }
+
         try {
             const response = await axios.post(API_URL, {
                 user_id: userId,
@@ -21,9 +52,10 @@ export default function Post() {
                 description: description,
                 image: image
             });
-            console.log('Publicación exitosa:', response.data);
+            alert('Publicación exitosa:', response.data);
+            redirect('/forum');
         } catch (error) {
-            console.error('Error al publicar:', error);
+            alert('Error al publicar:', error);
         }
     };
 
