@@ -2,7 +2,6 @@ import connection from "../database/db_connection.js";
 
 export const publishPost = async (req, res) => {
     const { user_id, tags, description, image } = req.body;
-    console.log(req.body);
     try {
         const [results] = await connection.query('INSERT INTO Publicacion (id_usuario, contenido, ruta_imagen) VALUES (?, ?, ?)', [user_id, description, image]);
         handleTags(results.insertId, tags);
@@ -15,7 +14,6 @@ export const publishPost = async (req, res) => {
 
 const handleTags = async (postId, tags) => {
     const tagsArray = tags.split(',').map(tag => tag.trim());
-    console.log(tagsArray);
     const tagsIds = await getTags(tagsArray);
 
     addTagsToPost(postId, tagsIds);

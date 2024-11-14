@@ -14,7 +14,6 @@ export const getAllUsers = async (req, res) => {
 export const getUserById = async (req, res) => {
     const { id } = req.params;
     try {
-      console.log(id);
       const [results] = await connection.query('SELECT * FROM Usuario WHERE id = ?', id);
       res.json(results);
     } catch (error) {
