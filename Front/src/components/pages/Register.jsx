@@ -5,6 +5,8 @@ import './Register.css';
 import axios from 'axios';
 import { useState } from 'react';
 const API_URL = 'http://localhost:3000/api/user/create';
+const AUTH_URL = 'http://127.0.0.1:3000/auth/login/';
+
 
 export default function Register() {
     const createUser = async (n1, n2, a1, a2, nick, e, p) => {
@@ -18,10 +20,25 @@ export default function Register() {
                 correo: e,
                 contrasena: p
             });
-            console.log(response.data);
+
             setUserId(response.data.insertId);
         } catch (error) {
             console.error(error);
+        }
+    }
+
+    const iniciarSesion = async (e, p) => {
+        const response = await axios.post(AUTH_URL, {
+            correo: e,
+            contrasena: p
+        });
+
+        if (response.data.login) {
+            localStorage.setItem('token', response.data.token);
+            alert('Registro e inicio de sesión exitoso');
+            redirect('/forum');
+        } else {
+            alert("Error al iniciar sesión con el usuario creado\n" + response.data.message + "\nPor favor inicie sesión manualmente"); ;
         }
     }
 
@@ -33,7 +50,6 @@ export default function Register() {
     const [correo, setCorreo] = useState('');
     const [contrasena, setContrasena] = useState('');
     const [confirmContrasena, setConfirmContrasena] = useState('');
-    const [userId, setUserId] = useState(null); // Variable para guardar el insertId
 
     const handleSubmit = (e) => {
         e.preventDefault(); // Evita que la página se recargue
@@ -42,18 +58,13 @@ export default function Register() {
             return;
         }
         createUser(nombre1, nombre2, apellido1, apellido2, nickname, correo, contrasena);
+        iniciarSesion(correo, contrasena);
     }
 
     return (
         <div className="register-container">
             <img src={fondo} alt="Imagen de fondo para el registro" className="register-background" />
             <div className="register-form-container">
-                {userId && (
-                    <div className="success-message">
-                        <h2>¡Registro Exitoso!</h2>
-                        <p>Usuario creado con ID: {userId}</p>
-                    </div>
-                )}
                 <h1>Crear cuenta</h1>
                 <form className="register-form" onSubmit={handleSubmit}>
                     <div className="form-group">
