@@ -25,7 +25,8 @@ export default function Post() {
                 if (response.data.login) {
                     return response.data.userData.userId;
                 } else {
-                    alert('Token inválido, por favor inicia sesión nuevamente.');
+                    alert('Token inválido o expirado, por favor inicia sesión nuevamente.');
+                    localStorage.removeItem('token');
                     return null;
                 }
             } catch (error) {

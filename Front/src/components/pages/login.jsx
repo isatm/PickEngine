@@ -9,11 +9,13 @@ const AUTH_URL = 'http://127.0.0.1:3000/auth/login/';
 export default function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [rememberMe, setRememberMe] = useState(false);
 
     const handleSubmit = async (e) => {
         const response = await axios.post(AUTH_URL, {
             correo: email,
-            contrasena: password
+            contrasena: password,
+            rememberMe: rememberMe
         });
 
         if (response.data.login) {
@@ -58,6 +60,7 @@ export default function Login() {
                         type="checkbox"
                         value="remember-me"
                         id="rememberMe"
+                        onChange={(e) => setRememberMe(e.target.checked)}
                         />
                         <label className="form-check-label" htmlFor="rememberMe">
                         Remember me
