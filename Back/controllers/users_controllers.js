@@ -32,16 +32,19 @@ export const createUser = async (req, res) => {
     }
 }
 
-export const verifyUser = async (req, res) => {
-  const { correo, contrasena } = req.body;
+export const verifyUser = async (correo, contrasena) => {
   try {
-    const [results] = await connection.query('SELECT id FROM Usuario WHERE correo = ? AND contrasena = ?', [correo, contrasena]);
+    const [results] = await connection.query('SELECT id, nick_name, rol FROM Usuario WHERE correo = ? AND contrasena = ?', [correo, contrasena]);
     if (results.length > 0) {
-      res.json({ userId: results[0].id });
+      return { 
+        userId: results[0].id,
+        nickName: results[0].nick_name,
+        rol: results[0].rol
+      };
     } else {
-      res.json({ userId: -1 });
+      return { userId: -1 };
     }
   } catch (error) {
-    res.json({ error: error.message });
+    throw new Error(error.message);
   }
 }
