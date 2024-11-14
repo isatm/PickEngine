@@ -1,4 +1,4 @@
-import "./Post.css";
+import "./toPost.css";
 import CustomButton from "../atoms/Button/CustomButton";
 
 import { useState } from 'react';

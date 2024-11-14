@@ -4,11 +4,11 @@ import './Forum.css'
 import CustomButton from '../atoms/Button/CustomButton';
 import Chat from '../molecules/Chat/Chat';
 import CustomNav from '../atoms/Nav/CustomNav';
-import Post from '../organism/post';
+import Post from '../organism/Post';
 
 export default function Forum() {
     return (
-        <body className = 'bodyForum'>
+        <div className = 'bodyForum'>
             <section className = 'fixedPositions'>
                 <div className = 'personal'>
                     <CustomButton
@@ -42,6 +42,6 @@ export default function Forum() {
                     Fecha = "15-07-2024"
                 />
             </section>
-        </body>
+        </div>
     );
 }
