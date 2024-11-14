@@ -64,6 +64,6 @@ button {
     width: 100%;
 }
 
-.footer {
-    position: relative;
+.general {
+    height: 80vh;
 }

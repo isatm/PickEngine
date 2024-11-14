@@ -60,7 +60,7 @@ export default function Post() {
     };
 
     return (
-        <div>
+        <div className="general">
             <div className="create-post-container">
                 <h1>Crear una Nueva Publicación</h1>
                 
