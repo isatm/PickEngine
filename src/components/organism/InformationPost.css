@@ -1,0 +1,19 @@
+.generalInformation{
+    .privacyHeader{
+        .privacyImage{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            .logo{
+                width: 300px; /* Ajusta el tamaño según tus necesidades */
+                height: auto;
+            }
+        }
+        h1{
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+        }
+    }
+}
