@@ -1,32 +1,53 @@
 //import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-//import Header from './components/molecules/Header/header'
-import Header2 from './components/molecules/Header2/header2'
-import Footer from './components/molecules/Footer/footer'
-import Home from './components/pages/home'
-import Login from './components/pages/login'
-import Register from './components/pages/register'
-import Modelos from './components/pages/3d'
-import IA from './components/pages/ia'
-import Forum from './components/pages/forum'
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+// import Header from './components/molecules/Header/header'
+import Header2 from './components/molecules/Header2/header2';
+import HeaderTC from './components/molecules/HeaderTC/headerTc';
+import Footer from './components/molecules/Footer/footer';
+import Home from './components/pages/home';
+import Login from './components/pages/login';
+import Register from './components/pages/register';
+import Modelos from './components/pages/3d';
+import IA from './components/pages/ia';
+import Forum from './components/pages/forum';
 import Post from './components/pages/toPost.jsx'
+import PrivacyP from './components/pages/privacyp';
 
 const App = () => {
   return (
     <Router>
-      <Header2 />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/3d" element={<Modelos />} />
-        <Route path="/ia" element={<IA />} />
-        <Route path="/forum" element={<Forum />} />
-        <Route path="/post" element={<Post />} />
+        <Route path="/" element={<PrincipalPageHeader component={<Home />} />} />
+        <Route path="/login" element={<PrincipalPageHeader component={<Login />} />} />
+        <Route path="/register" element={<PrincipalPageHeader component={<Register />} />} />
+        <Route path="/3d" element={<PrincipalPageHeader component={<Modelos />} />} />
+        <Route path="/ia" element={<PrincipalPageHeader component={<IA />} />} />
+        <Route path="/forum" element={<PrincipalPageHeader component={<Forum />} />} />
+        <Route path="/post" element={<PrincipalPageHeader component={<Post />}/>} />
+        <Route path="/privacyp" element={<TermsAndConditionsPageHeader component={<PrivacyP />} />} />
       </Routes>
-      <Footer />
     </Router>
-  )
-}
+  );
+};
 
-export default App
+const PrincipalPageHeader = ({ component }) => {
+  return (
+    <>
+      <Header2 />
+      {component}
+      <Footer />
+    </>
+  );
+};
+
+const TermsAndConditionsPageHeader = ({ component }) => {
+  return (
+    <>
+      <HeaderTC />
+      {component}
+      <Footer />
+    </>
+  );
+};
+
+export default App;
