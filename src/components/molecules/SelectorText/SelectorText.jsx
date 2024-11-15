@@ -23,62 +23,62 @@ export default function SelectorText() {
       <main className="contentS">
         <section id="introduction">
           <h2>1. Introducción</h2>
-          <p>En este apartado, se proporciona una visión general de la política de privacidad, explicando la importancia de la privacidad de los datos del usuario y cómo esta aplicación se compromete a proteger dicha información. Podrías incluir una breve explicación de las funcionalidades de la aplicación y el objetivo principal de la recopilación de datos, mencionando que incluye IA, modelado 3D y una red social centrada en automovilismo.</p>
+          <p>En PickEngine, entendemos la importancia de proteger tu información personal y estamos comprometidos con la seguridad de tus datos. Esta política de privacidad describe cómo recopilamos, usamos y compartimos la información que nos proporcionas. Nuestra aplicación está diseñada para ofrecerte una experiencia interactiva centrada en el automovilismo, que incluye recomendaciones personalizadas a través de inteligencia artificial (IA), la creación de modelos 3D de vehículos y una red social donde puedes interactuar con otros entusiastas del automovilismo. La recopilación de datos se realiza con el fin de mejorar la experiencia del usuario y hacer que el contenido sea más relevante.</p>
         </section>
         <section id="InformationCollected">
           <h2>2. Información Recopilada</h2>
-          <p>Este capítulo debería desglosar los tipos de información que recopila la aplicación, incluyendo:
-          Datos personales: Nombre, correo electrónico, datos de contacto, y en algunos casos, información de pago.
-          Datos de perfil: Preferencias de usuario, historial de actividad y cualquier información que el usuario decida compartir en su perfil.
-          Datos generados por IA: Información que la IA utiliza para personalizar la experiencia, como preferencias de automovilismo, historial de uso, etc.
-          Datos de modelado 3D: Imágenes y configuraciones que el usuario carga o genera para crear modelos en 3D de vehículos.
-          Interacciones en la red social: Publicaciones, comentarios y me gusta en contenido relacionado con automovilismo, junto con interacciones con otros usuarios.</p>
+          <p>Recopilamos varios tipos de información para ofrecerte una experiencia personalizada y mejorar nuestras funcionalidades:
+            Datos personales: Incluyen tu nombre, correo electrónico, número de teléfono y, en algunos casos, información de pago si decides realizar compras dentro de la aplicación.
+            Datos de perfil: Información relacionada con tus preferencias en automovilismo, tus interacciones dentro de la app y cualquier dato que decidas compartir en tu perfil, como tu foto de perfil o biografía.
+            Datos generados por IA: La IA utiliza tu historial de uso para ofrecerte recomendaciones personalizadas sobre vehículos, contenido y configuraciones de modelado 3D basadas en tus intereses.
+            Datos de modelado 3D: Cuando creas o subes modelos 3D de vehículos, almacenamos las imágenes y configuraciones que elijas para personalizar tu experiencia visual.
+            Interacciones en la red social: Incluye publicaciones, comentarios, "me gusta" y mensajes que compartas con otros usuarios dentro de nuestra comunidad de automovilismo.</p>
         </section>
         <section id="UseIC">
           <h2>3. Uso de la Información Recopilada</h2>
-          <p>Este apartado debe describir cómo la aplicación utiliza la información recopilada para:
-          Personalizar la experiencia del usuario.
-          Mejorar la precisión de las recomendaciones de IA.
-          Crear modelos 3D y ofrecer una experiencia visual ajustada a las preferencias del usuario.
-          Facilitar interacciones en la red social y la comunicación con otros usuarios.
-          Realizar análisis para mejorar el funcionamiento de la aplicación y ofrecer contenido más relevante.</p>
+          <p>La información recopilada se utiliza para:
+            Personalizar la experiencia del usuario: Para que te ofrezcamos contenido y recomendaciones que coincidan con tus intereses en automovilismo.
+            Mejorar la IA: Utilizamos los datos generados por ti para mejorar la precisión de las recomendaciones automatizadas, como vehículos sugeridos y configuraciones de modelado 3D.
+            Crear y ajustar modelos 3D: Los datos de modelado que subes se utilizan para generar experiencias visuales ajustadas a tus preferencias.
+            Facilitar la interacción en la red social: Tus publicaciones, comentarios y reacciones en la red social son visibles para otros usuarios, lo que fomenta la interacción dentro de la comunidad.
+            Realizar análisis: Utilizamos datos agregados para mejorar las funciones y el rendimiento de la aplicación, y ofrecer contenido más relevante y atractivo.</p>
         </section>
         <section id="Sharedinformation">
           <h2>4. Compartición de la Información</h2>
-          <p>Especifica las circunstancias en las que la información podría ser compartida con terceros, por ejemplo:
-          Proveedores de servicios: Empresas externas que ayudan con el análisis de datos, almacenamiento en la nube o procesamiento de pagos.
-          Socios de automovilismo: Empresas de automovilismo con las que se colabore para ofrecer contenido relevante.
-          En redes sociales: Información compartida dentro de la red social de la aplicación será visible para otros usuarios, según la configuración de privacidad del usuario.
-          Asegura que se aclare que la aplicación no venderá la información a terceros sin el consentimiento explícito del usuario.</p>
+          <p>Podemos compartir tu información con terceros en las siguientes circunstancias:
+            Proveedores de servicios: Empresas que nos ayudan con almacenamiento de datos en la nube, análisis de datos, y procesamiento de pagos.
+            Socios de automovilismo: Colaboramos con marcas de automovilismo y otros proveedores para ofrecerte contenido relevante, pero nunca compartimos tus datos personales sin tu consentimiento explícito.
+            Redes sociales: La información que compartes públicamente en la red social de la aplicación será accesible para otros usuarios, de acuerdo con las configuraciones de privacidad que elijas.
+            No vendemos ni compartimos tu información con terceros sin tu consentimiento previo, salvo en los casos descritos anteriormente.</p>
         </section>
         <section id="DataSecurity">
           <h2>5. Seguridad de los Datos</h2>
-          <p>Este apartado explica las medidas de seguridad adoptadas para proteger la información de los usuarios, tales como encriptación, protocolos de seguridad y controles de acceso. También puede incluir una explicación de las medidas adoptadas para proteger la integridad de los datos generados por la IA y el modelado 3D.</p>
+          <p>Nos comprometemos a proteger tus datos personales mediante el uso de encriptación avanzada, protocolos de seguridad como HTTPS y políticas estrictas de control de acceso. Sólo empleados autorizados pueden acceder a los datos, y utilizamos medidas para proteger la integridad de los datos generados por la IA y el modelado 3D.</p>
         </section>
         <section id="DataRetentionandDeletion">
           <h2>6. Retención y Eliminación de Datos</h2>
-          <p>Describe el tiempo que la aplicación retiene los datos de los usuarios y cómo se eliminan o anonimiza la información cuando ya no es necesaria. Especifica los derechos del usuario para solicitar la eliminación de su información y el proceso para hacerlo.</p>
+          <p>Conservamos tus datos personales durante el tiempo que sea necesario para cumplir con los fines establecidos en esta política de privacidad. Puedes solicitar la eliminación de tu cuenta y todos tus datos en cualquier momento, y procesaremos tu solicitud tan pronto como sea posible. Si decides eliminar tu cuenta, eliminaremos tus datos de nuestra base de datos, aunque ciertos datos podrían ser conservados por razones legales o de seguridad.</p>
         </section>
         <section id="UserRights">
           <h2>7. Derechos del Usuario</h2>
-          <p>Explica los derechos de los usuarios con respecto a su información, incluyendo:
-          Derecho a acceder a sus datos.
-          Derecho a corregir información inexacta.
-          Derecho a eliminar sus datos.
-          Derecho a oponerse al procesamiento de sus datos, especialmente en lo que respecta a la personalización por IA.
-          Derecho a configurar las preferencias de privacidad dentro de la aplicación.</p>
+          <p>Tienes los siguientes derechos con respecto a tu información:
+              Acceso a tus datos: Puedes solicitar en cualquier momento una copia de la información personal que tenemos sobre ti.
+              Corrección de información: Si tus datos son inexactos o están incompletos, puedes corregirlos fácilmente a través de la aplicación.
+              Eliminación de datos: Puedes solicitar que eliminemos tu información personal, incluyendo tu cuenta, en cualquier momento.
+              Oposición al procesamiento de datos: Tienes derecho a oponerte al uso de tus datos para personalización a través de IA o cualquier otro propósito de marketing.
+              Configuración de preferencias de privacidad: Puedes ajustar tus preferencias de privacidad dentro de la aplicación para controlar qué datos compartes y cómo se usan.</p>
         </section>
         <section id="Cookies">
           <h2>8.  Cookies y Tecnologías de Seguimiento</h2>
-          <p>Explica el uso de cookies y otras tecnologías para rastrear el comportamiento del usuario en la aplicación. Este capítulo debe especificar qué tipo de información se recopila a través de cookies y cómo los usuarios pueden gestionar sus preferencias de cookies.</p>
+          <p>Utilizamos cookies y tecnologías de seguimiento para mejorar la funcionalidad de la aplicación, personalizar tu experiencia y analizar el uso de la misma. Las cookies nos permiten recordar tu configuración y preferencias, así como ofrecerte contenido relevante basado en tu actividad. Puedes gestionar tus preferencias de cookies a través de la configuración de la aplicación o de tu navegador.</p>
         </section>
         <section id="Links">
           <h2>9. Enlaces a Otros Sitios Web</h2>
-          <p>Aclara que la aplicación puede contener enlaces a sitios web externos o contenido de terceros, como noticias o eventos de automovilismo, y que no se hace responsable de las políticas de privacidad de esos sitios.</p>
+          <p>Nuestra aplicación puede contener enlaces a sitios web de terceros, como eventos de automovilismo o tiendas relacionadas. No somos responsables de las prácticas de privacidad de estos sitios, por lo que te recomendamos leer sus políticas de privacidad antes de proporcionarles tu información personal.</p>
         </section>
         <section id="UpdatesPrivacyP">
           <h2>10. Actualizaciones de la Política de Privacidad</h2>
-          <p>Describe cómo y cuándo se notificarán las actualizaciones de esta política de privacidad. Asegura que el usuario será notificado en caso de cambios significativos en la forma en que se recopila, usa o comparte la información.</p>
+          <p>Nos reservamos el derecho de actualizar esta política de privacidad de vez en cuando. Cuando realicemos cambios significativos, te notificaremos a través de la aplicación o por correo electrónico. La fecha de la última actualización estará siempre disponible en la parte inferior de esta página.</p>
         </section>
       </main>
     </div>

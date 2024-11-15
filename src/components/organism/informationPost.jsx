@@ -21,7 +21,6 @@ export default function InformationPost({}) {
           <section className = 'textReturToPage'>
             <p>Si tiene alguna pregunta o necesita asistencia, no dude en contactarnos haciendo clic en el siguiente botón.</p>
           </section>
-          <img src="Motor.png" alt="Motor" className="imageMotorPrivacyP" />
           <CustomButton text = "Contáctanos"/>
         </div>
     </main>
