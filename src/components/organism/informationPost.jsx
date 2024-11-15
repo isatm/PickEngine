@@ -2,6 +2,7 @@ import './InformationPost.css'
 import Logo from '/Logo.png'; 
 import Separator from '../atoms/Separator/separator';
 import SelectorText from "../molecules/SelectorText/SelectorText";
+import CustomButton from '../atoms/Button/CustomButton'
 
 export default function InformationPost({}) {
   return (
@@ -15,6 +16,13 @@ export default function InformationPost({}) {
         </div>
         <div className = 'privacyText'>
             <SelectorText />
+        </div>
+        <div className = 'returnToPage'>
+          <section className = 'textReturToPage'>
+            <p>Si tiene alguna pregunta o necesita asistencia, no dude en contactarnos haciendo clic en el siguiente botón.</p>
+          </section>
+          <img src="Motor.png" alt="Motor" className="imageMotorPrivacyP" />
+          <CustomButton text = "Contáctanos"/>
         </div>
     </main>
   );

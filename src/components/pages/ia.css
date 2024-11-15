@@ -5,11 +5,11 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    flex: 1; /* Ocupa el espacio restante */
-    width: 100%; /* Ajusta al ancho del contenedor */
+    flex: 1; 
+    width: 100%; 
   }
   
-  .content {
+  .content-IA {
     text-align: center;
   }
   

@@ -3,7 +3,7 @@ import './ia.css'
 export default function IA() {
     return (
         <div className="container">
-          <div className="content">
+          <div className="content-IA">
             <h1 className="main-title">PickEngine</h1>
             <h2 className="subtitle">IA</h2>
             <div className="button-group">

@@ -5,7 +5,7 @@
   .sidebar {
     width: 200px;
     padding: 20px;
-    background-color: #f4f4f8;
+    background-color:white;
     position: sticky;
     top: 0;
     height: calc(100vh - 140px); 
@@ -23,7 +23,7 @@
   
   .sidebar nav ul li a {
     text-decoration: none;
-    color: #0056b3;
+    color: #f5bc00;
     font-weight: bold;
   }
   
@@ -31,22 +31,25 @@
     text-decoration: underline;
   }
   
-  .content {
+  .contentS {
+    font-family: Verdana;
+    font-size: 14px;
+    background-color: white;
     padding: 20px;
-    max-width: 1000px;
+    max-width: 800px;
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
   
-  .content section {
+  .contentS section {
     margin-bottom: 50px;
-    max-width: 800px;
+    max-width: 800px; 
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
   }
   
-  .content section h2 {
+  .contentS section h2 {
     color: #333;
     font-size: 1.5em;
   }

@@ -1,4 +1,5 @@
 .generalInformation{
+    background-color: white;
     .privacyHeader{
         .privacyImage{
             display: flex;
@@ -14,6 +15,36 @@
             display: flex;
             align-items: center;
             justify-content: center; 
+        }
+    }
+    .returnToPage{
+        background-color: rgb(129, 115, 115);
+        position: relative;
+        width: 80%; 
+        height: 80vh; 
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+        overflow: hidden; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        margin-bottom: 80px;
+
+        .imageMotorPrivacyP{
+            width: 20%;  
+            margin: 30px;
+            height: auto; 
+        }
+
+        .textReturToPage{
+            color: white;
+            font-family: Verdana;
+            font-size: 200%;
+            max-width: 700px;
+            padding: 10%;
         }
     }
 }
