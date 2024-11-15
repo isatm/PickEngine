@@ -12,6 +12,7 @@ import IA from './components/pages/ia';
 import Forum from './components/pages/forum';
 import Post from './components/pages/toPost.jsx'
 import PrivacyP from './components/pages/privacyp';
+import Cuenta from './components/pages/cuenta.jsx';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/forum" element={<PrincipalPageHeader component={<Forum />} />} />
         <Route path="/post" element={<PrincipalPageHeader component={<Post />}/>} />
         <Route path="/privacyp" element={<TermsAndConditionsPageHeader component={<PrivacyP />} />} />
+        <Route path="/cuenta" element={<PrincipalPageHeader component={<Cuenta />}/>} />
       </Routes>
     </Router>
   );

@@ -1,6 +1,6 @@
 //import React from 'react';
-//import { Link } from 'react-router-dom';
 import './Home.css'
+import { Link } from 'react-router-dom';
 
 export default function Home() {
 return (
@@ -16,7 +16,9 @@ return (
                         <p className="description">
                             Ven y prueba nuestra IA especializada en automovilismo.
                         </p>
-                        <button className="start-button">Iniciar</button>
+                        <Link to='/ia'>
+                            <button className="start-button">Iniciar</button>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -30,7 +32,9 @@ return (
                     <p className="description">
                         Con nuestro apartado de personalización 3D, eso es posible.
                     </p>
-                    <button className="start-button">Iniciar</button>
+                    <Link to='/3d'>
+                        <button className="start-button">Iniciar</button>
+                    </Link>
                 </div>
             </div>
         </div>
@@ -45,7 +49,9 @@ return (
                     <p className="description">
                         Interactua con los fanaticos de los autos de todo el mundo.
                     </p>
+                    <Link to='/forum'>
                         <button className="start-button">Iniciar</button>
+                    </Link>
                 </div>
             </div>
         </div>
