@@ -1,42 +1,96 @@
 .header {
   display: flex;
-  justify-content: space-between; /* Espacia los elementos */
-  align-items: center; /* Alinea verticalmente los elementos */
-  padding: 10px 20px;
-  background-color: #f8f9fa;
-  background-color: #343a40;
-  color: white;
-  border-bottom: 1px solid #e5e5e5;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1d1b1b;
 }
 
 .logo-container {
-  flex: 1; /* Ocupa espacio hacia la izquierda */
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-  height: 50px; /* Tamaño del logo */
+  width: 100px; /* Ajusta el tamaño del logo si es necesario */
+  height: auto;
 }
 
 .nav-items {
-  flex: 2; /* Ocupa más espacio en el centro */
   display: flex;
-  justify-content: center; /* Centra los textos horizontalmente */
-  gap: 20px;
+  gap: 40px;
+  align-items: center;
+  margin-left: 20%;
 }
 
 .nav-item {
-  font-size: 18px;
-  cursor: pointer;
-}
-
-.profile-container {
-  flex: 1; /* Ocupa espacio hacia la derecha */
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.profile-pic {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%; /* Hace la imagen circular */
+.nav-icon {
+  width: 30px; /* Ajusta el tamaño de los iconos */
+  height: auto;
+  margin-bottom: 5px; /* Añade espacio entre el icono y el texto */
+}
+
+.nav-item p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #eeeeee;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.nav-item p:hover {
+  font-family: Arial, sans-serif;
+  color: rgb(255, 237, 132);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-register-container {
+  display: flex;
+  gap: 10px;
+}
+
+.profile-container{
+  display: flex; /* Activar Flexbox */
+  flex-direction: row; /* Colocar en fila */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  gap: 20px; /* Espaciado entre elementos */
+  img{
+    width: 12%; /* Reduce la imagen al 50% de su tamaño original */
+    max-width: 300px; /* Limita el ancho máximo */
+    height: auto; /* Mantén la proporción de la imagen */
+  }
+  h2{
+    color: white;
+  }
+}
+
+.btn-1 {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #f1cb4d;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-1:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-1:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
 }

@@ -1,12 +1,21 @@
+import "./Login.css";
 import { useState } from 'react';
 import { Link, redirect } from 'react-router-dom';
 import axios from 'axios';
-import "./Login.css";
 import CustomButton from '../atoms/Button/CustomButton';
+import { useAuth } from '../../context';
 
 const AUTH_URL = 'http://127.0.0.1:3000/auth/login/';
 
 export default function Login() {
+    const { login } = useAuth();
+
+    const handleLogin = () => {
+    // Aquí iría la lógica de autenticación
+    login(); // Actualizar el estado de autenticación
+    };
+
+
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [rememberMe, setRememberMe] = useState(false);
@@ -68,7 +77,7 @@ export default function Login() {
                     </div>
                     <div className="button-container">
                     <Link to="/forum">
-                        <button onClick={handleSubmit}>Sign in</button>
+                        <button onClick={() => { handleSubmit(); handleLogin(); }}>Sign in</button>
                     </Link> 
                     <Link to="/register">
                         <CustomButton
