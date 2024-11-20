@@ -11,8 +11,7 @@ export default function Login() {
     const { login } = useAuth();
 
     const handleLogin = () => {
-    // Aquí iría la lógica de autenticación
-    login(); // Actualizar el estado de autenticación
+    login(); 
     };
 
 
