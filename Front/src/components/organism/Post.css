@@ -80,3 +80,30 @@
         
     }
 }
+
+.comentario{
+    display: flex;
+
+    
+    .logo-comentario{
+        margin: 8px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+    }
+    
+}
+.comentario input[type="text"] {
+    color: aliceblue;
+    border: none;
+    background-color: transparent;
+}
+.publicar-btn{
+    border-radius: 20px;
+    padding: 0cqmin;
+    width: 130px;
+    
+    background-color: aliceblue;
+    
+}

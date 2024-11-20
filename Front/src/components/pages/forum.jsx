@@ -11,12 +11,14 @@ export default function Forum() {
         <div className = 'bodyForum'>
             <section className = 'fixedPositions'>
                 <div className = 'personal'>
+                    
                     <CustomButton
                         text = {"Crear una nueva publicación"}
                         redirect={"/post"}
                     />
                     
-                    <Chat/>
+                    
+                
                     
                 </div>
             </section>
