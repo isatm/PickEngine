@@ -1,16 +1,15 @@
 import './HeaderTc.css' 
 import CustomButton from '../../atoms/Button/CustomButton'
 
-export default function HeaderTC() {
+export default function HeaderTC({title, button1, button2}) {
   return (
     <main className="HeaderTc">
       <section className = "SelectedOption">
-        <h1>Políticas de privacidad</h1>
+        <h1>{title}</h1>
       </section>
       <section className = "Options">
-        <CustomButton text = "Terminos y condiciones" />
-        <CustomButton text = "Configuración de privacidad"/>
-        <CustomButton text = "Descargar PDF"/>
+        <CustomButton text = {button1} />
+        <CustomButton text = {button2} />
       </section>
     </main>
   );

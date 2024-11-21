@@ -8,6 +8,9 @@ const Footer = () => {
                 <a href="/privacyp" target="_blank" rel="noopener noreferrer">
                     <p>Políticas de Privacidad</p>
                 </a>
+                <a href="/conditionS" target="_blank" rel="noopener noreferrer">
+                    <p>Condiciones de Servicio</p>
+                </a>
             </div>
         </footer>
     );
