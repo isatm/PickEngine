@@ -102,8 +102,27 @@
 .publicar-btn{
     border-radius: 20px;
     padding: 0cqmin;
-    width: 130px;
-    
+    width: 150px;
+    height: 45px;
     background-color: aliceblue;
     
+}
+.fav-btn{
+    padding: 0cqmin;
+    border: none;
+    width: 40px;
+    background-color: transparent;
+}
+.fav-icon{
+    width: 20px;
+}
+
+.vote-btn{
+    padding: 0%;
+    border: none;
+    width: 60px;
+    background-color: transparent;
+}
+.flecha{
+    width: 60px;
 }
