@@ -1,8 +1,22 @@
 import './Cuenta.css';
 import Post from '../../organism/Post';
 import CustomButton from '../../atoms/Button/CustomButton';
+import { useState } from 'react';
 
 export default function Cuenta() {
+    const [followVar,setFollowVar]=useState("Seguir");
+    const [follows,setFollows]=useState([]);
+
+    const changeFollow = () => {
+        const user = "@JuanAutoLover"; // Nombre del usuario actual
+        if (follows.includes(user)) {
+            setFollows(follows.filter(follow => follow !== user));
+            setFollowVar("Seguir");
+        } else {
+            setFollows([...follows, user]);
+            setFollowVar("Siguiendo");
+        }
+    };
     return (
         <div className="container"> 
             <div className="contenido-cuenta">
@@ -15,10 +29,10 @@ export default function Cuenta() {
                         <h3>@JuanAutoLover</h3>
                         <h4>Hola me llamo juan :D</h4>
                     </div>
-                    <div className='boton-cuenta'>    
-                        <CustomButton
-                        text = {"Seguir"}
-                        />
+                    <div className='boton-cuenta'> 
+                        <button onClick={changeFollow} className='follow-btn'>
+                            {followVar}
+                        </button>
                         <CustomButton
                         text = {"Mensaje"}
                     />
