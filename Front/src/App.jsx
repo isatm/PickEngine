@@ -10,6 +10,9 @@ import Modelos from './components/pages/3d'
 import IA from './components/pages/ia'
 import Forum from './components/pages/forum'
 import Post from './components/pages/toPost.jsx'
+import Marketplace from './components/pages/marketplace.jsx';
+import DetallesProducto from './components/pages/detallesProducto.jsx';
+import PublishProduct from './components/pages/publishProduct.jsx';
 
 const App = () => {
   return (
@@ -23,6 +26,9 @@ const App = () => {
         <Route path="/ia" element={<IA />} />
         <Route path="/forum" element={<Forum />} />
         <Route path="/post" element={<Post />} />
+        <Route path="/marketplace" element={<Marketplace />} />
+        <Route path="/product/:id" element={<DetallesProducto />} />
+        <Route path="/publish" element={<PublishProduct />} />
       </Routes>
       <Footer />
     </Router>

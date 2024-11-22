@@ -8,10 +8,6 @@ import { redirect } from "react-router-dom";
 const API_URL = 'http://localhost:3000/api/post/publish';
 const AUTH_URL = 'http://127.0.0.1:3000/auth/login/verify';
 
-const getUserId = () => {
-
-}
-
 export default function Post() {
     const [image, setImage] = useState(null);
     const [description, setDescription] = useState("");

@@ -1,0 +1,55 @@
+.G {
+    background-image: url("/public/fondoForum.png");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.detallesProducto-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+}
+
+.detallesProducto, .detalles-vendedor {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.detallesProducto h1, .detalles-vendedor h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.detallesProducto p, .detalles-vendedor p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.detallesProducto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: block;
+    margin: 10px auto 0 auto;
+}
+
+.detalles-vendedor .avatar {
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: block;
+    margin: 10px auto 0 auto;
+}
