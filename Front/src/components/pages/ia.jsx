@@ -1,4 +1,8 @@
 import './ia.css'
+import axios from 'axios';
+import { useState } from 'react';
+
+const IA_URL = 'http://localhost:3000/api/ia';
 
 export default function IA() {
     return (
