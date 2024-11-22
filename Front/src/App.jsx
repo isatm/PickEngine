@@ -13,6 +13,7 @@ import Post from './components/pages/toPost.jsx';
 import PrivacyP from './components/pages/privacyp';
 import Cuenta from './components/pages/cuenta.jsx';
 import Settings from './components/pages/Settings.jsx';
+import MisChats from './components/pages/MisChats.jsx';
 import { AuthProvider, useAuth } from './context.jsx';
 
 const App = () => {
@@ -47,6 +48,7 @@ const App = () => {
           <Route path="/privacyp" element={<TermsAndConditionsPageHeader component={<PrivacyP />} />} />
           <Route path="/cuenta" element={<PageHeader component={<Cuenta />} />} />
           <Route path="/settings" element={<PageHeader component={<Settings />} />} />
+          <Route path="/chats" element={<PageHeader component={<MisChats />} />} />
         </Routes>
       </Router>
     </AuthProvider>

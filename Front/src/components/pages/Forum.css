@@ -1,41 +1,51 @@
 .bodyForum {
-    
-	.fixedPositions{
-		display: flex;
-		justify-content: space-between; 
-		position: fixed;
-		.personal {
-			background-color: #1f201d; 
-			padding: 10px; 
-			margin: 5px; 
-		}
+	.fixedPositions {
+	  display: flex;
+	  justify-content: space-between;
+	  position: fixed;
+	  width: 100%;
+	  top: 0;
+	  left: 0;
+	  padding: 10px;
+	  .personal {
+		background-color: #1f201d;
+		padding: 10px;
+		margin: 5px;
+		margin-top: 100PX;
+	  }
 	}
-	.publicaciones{
-		background-image: url('fondoForum.png');
-		flex-direction: column;
-		display: flex;
-		justify-content: center; 
-		align-items: center;
-		.Post{
-			padding: 100px;
-		}
+	  
+	.publicaciones {
+	  background-image: url('fondoForum.png');
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
 	}
-}
-.barraForum{
+
+  }
+  
+  .bMarket{
+	margin-top: 15px;
+  }
+
+
+  .barraForum {
 	display: flex;
 	align-items: center;
-	margin: 5px; 
-}
-.navbar {
+	margin: 5px;
+  }
+  
+  .navbar {
 	background-color: transparent;
 	margin-left: 10px;
 	padding: 2px 15px;
-    font-size: 16px;
-    font-weight: bold;
-    border: 2px solid black;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+	font-size: 16px;
+	font-weight: bold;
+	border: 2px solid black;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease;
   }
   
   .menu {
@@ -58,16 +68,16 @@
   }
   
   .menu-item > a:hover {
-	background-color: ;
+	background-color: #555;
   }
   
-  /* Estilos del mega menú */
+  /* Estilos del submenú */
   .submenu {
 	display: none;
 	position: absolute;
 	top: 100%;
 	left: 0;
-	background-color: transparent;
+	background-color: black;
 	min-width: 200px;
 	padding: 10px;
 	box-sizing: border-box;
@@ -84,8 +94,8 @@
 	background-color: #1f201d;
   }
   
-  /* Mostrar el mega menú al hacer hover */
+  /* Mostrar el submenú al hacer hover */
   .menu-item:hover .submenu {
-	background-color: black;
 	display: block;
   }
+  
