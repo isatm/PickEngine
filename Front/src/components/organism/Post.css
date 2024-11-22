@@ -44,6 +44,7 @@
     overflow: hidden;
 
     .postTexto {
+        display: flex;
         max-width: 600px;
         font-size: 15px;
         line-height: 1.6;
@@ -51,6 +52,27 @@
         text-align: justify;
         margin-bottom: 15px;
         font-weight: bold;
+    }
+
+    .menu-btn{
+        border: none;
+        padding: 0;
+        width: 0px;
+        position: relative;
+        margin-left: auto;
+        
+    }
+    .menu-icon{
+        position: absolute;
+        top:0px;
+        right: 7px;
+        width: 25px;
+        transition: transform 0.3s ease; 
+
+    }
+    .menu-btn:hover .menu-icon{
+        content: url("menu points color.png");
+        transform: scale(1.1);
     }
 
     .postImagen {
@@ -126,3 +148,43 @@
 .flecha{
     width: 60px;
 }
+
+.menu-overlay {
+    position: fixed; /* Hace que el fondo cubra toda la pantalla */
+    top: auto;
+    left: 0;
+    width: 100vw; /* Ancho completo */
+    height: 100vh; /* Alto completo */
+    background: rgba(0, 0, 0, 0); /* Fondo transparente (puedes ajustar) */
+    z-index: 1000; /* Asegura que esté sobre todo */
+  }
+  
+  /* Menú desplegable */
+  .menu-opciones {
+    position: absolute;
+    top: 30px; /* Ajusta según la posición del botón */
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    z-index: 1001; /* Más alto que el overlay */
+  }
+  
+  /* Opciones del menú */
+  .menu-opciones ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  .menu-opciones li {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .menu-opciones li:hover {
+    background-color: #f5f5f5;
+  }
