@@ -1,5 +1,5 @@
 import "./toPost.css";
-import CustomButton from "../atoms/Button/CustomButton";
+import CustomButton from "../../atoms/Button/CustomButton";
 
 import { useState } from 'react';
 import axios from 'axios';

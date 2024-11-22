@@ -1,6 +1,6 @@
 import './Cuenta.css';
-import Post from '../organism/Post';
-import CustomButton from '../atoms/Button/CustomButton';
+import Post from '../../organism/Post';
+import CustomButton from '../../atoms/Button/CustomButton';
 
 export default function Cuenta() {
     return (

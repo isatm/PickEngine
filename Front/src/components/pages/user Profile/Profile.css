@@ -1,0 +1,160 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.container-profile {
+  background-color: #504f4f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  height: 800px;
+}
+
+.Banner-container {
+  border-radius: 20px;
+  position: relative; 
+  width: 100%; 
+  height: 300px;
+  overflow: hidden;
+}
+
+.Banner {
+  width: 100%; 
+  height: 70%;
+  object-fit: cover;
+}
+
+.banner-edit {
+  border-radius: 10%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: max-content;
+  width: auto;
+  border: none;
+}
+
+.banner-edit:hover {
+  background-color: #ffea00;
+}
+
+.edit-banner-btn {
+  width: 30px;
+}
+
+.icon-profile-container {
+  position: relative;
+}
+
+.icon-profile-btn {
+  border: none;
+  padding: 0px;
+  width: 0px;
+  border-radius: 100%;
+  position: absolute;
+  top: -150px;
+  left: 20px;
+}
+
+.img-profile {
+  margin: 8px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.username-container {
+  display: flex;
+  position: absolute;
+  left: 270px;
+  top: 370px;
+}
+
+.username {
+  position: relative;
+}
+
+.edit-username {
+  position: relative;
+  border: none;
+  padding: 1px;
+  width: 0px;
+  height: 0px;
+  left: 750px;
+}
+
+.img-edit {
+  width: 30px;
+}
+
+.description-container {
+  position: absolute;
+  background-color: #202020;
+  left: 270px;
+  border-radius: 20px;
+  width: 900px;
+  height: 100px;
+  display: flex;
+}
+
+.descripcion {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.edit-section {
+  position: absolute;
+  top: 350px;
+  left: 270px;
+  width: 900px;
+  height: 400px;
+  background-color: #404040;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.new-user{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.new-description{
+  display: block;
+  width: 100%;
+  height: 60%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.save-btn {
+  position: relative;
+  top: 40px;
+  left: 770px;
+  display: block;
+  width: 80px;
+  padding: 10px;
+  background-color: #d1d9bd;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.save-btn:hover {
+  background-color: #000000;
+}

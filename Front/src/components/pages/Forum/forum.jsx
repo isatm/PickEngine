@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 
 import './Forum.css'
-import CustomButton from '../atoms/Button/CustomButton';
-import Chat from '../molecules/Chat/Chat';
-import CustomNav from '../atoms/Nav/CustomNav';
-import Post from '../organism/Post';
+import CustomButton from '../../atoms/Button/CustomButton';
+import Chat from '../../molecules/Chat/Chat';
+import CustomNav from '../../atoms/Nav/CustomNav';
+import Post from '../../organism/Post';
 
 export default function Forum() {
     return (

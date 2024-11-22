@@ -2,8 +2,8 @@ import "./Login.css";
 import { useState } from 'react';
 import { Link, redirect } from 'react-router-dom';
 import axios from 'axios';
-import CustomButton from '../atoms/Button/CustomButton';
-import { useAuth } from '../../context';
+import CustomButton from '../../atoms/Button/CustomButton';
+import { useAuth } from '../../../context';
 
 const AUTH_URL = 'http://127.0.0.1:3000/auth/login/';
 
