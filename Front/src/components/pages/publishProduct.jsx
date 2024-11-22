@@ -1,5 +1,7 @@
 import "./publishProduct.css";
 import CustomButton from "../atoms/Button/CustomButton.jsx";
+import { Link, redirect } from 'react-router-dom';
+
 
 import { useState } from "react";
 import axios from "axios";
@@ -57,6 +59,8 @@ export default function PublishProduct() {
                 idVendedor: userId
             });
             console.log(response.data)
+            redirect('/marketplace');
+            
         } catch (error) {
             console.error(error);
         }

@@ -55,7 +55,7 @@ export const createProduct = async (req, res) => {
     const { nombre, descripcion, precio, stock, categoria, imagen, idVendedor } = req.body;
     try {
         const [results] = await connection.query(
-            'INSERT INTO Producto (nombre, descripcion, precio, stock, ruta_imagen, id_vendedor) VALUES (?, ?, ?, ?, ?, ?, ?)',
+            'INSERT INTO Producto (nombre, descripcion, precio, stock, ruta_imagen, id_vendedor) VALUES (?, ?, ?, ?, ?, ?)',
             [nombre, descripcion, precio, stock, imagen, idVendedor]
         );
         handleCategories(results.insertId, categoria);
