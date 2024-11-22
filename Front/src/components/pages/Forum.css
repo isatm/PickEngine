@@ -21,3 +21,71 @@
 		}
 	}
 }
+.barraForum{
+	display: flex;
+	align-items: center;
+	margin: 5px; 
+}
+.navbar {
+	background-color: transparent;
+	margin-left: 10px;
+	padding: 2px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+  }
+  
+  .menu-item {
+	position: relative;
+  }
+  
+  .menu-item > a {
+	color: white;
+	padding: 15px 30px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  .menu-item > a:hover {
+	background-color: ;
+  }
+  
+  /* Estilos del mega menú */
+  .submenu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: transparent;
+	min-width: 200px;
+	padding: 10px;
+	box-sizing: border-box;
+  }
+  
+  .submenu a {
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  .submenu a:hover {
+	background-color: #1f201d;
+  }
+  
+  /* Mostrar el mega menú al hacer hover */
+  .menu-item:hover .submenu {
+	background-color: black;
+	display: block;
+  }

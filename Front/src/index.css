@@ -3,3 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Estilos globales para temas 
+[data-theme="dark"] {
+    background-image: url('fondoForum.png');
+    background-color: black;
+    color: white;
+  }
+  
+  [data-theme="light"] {
+    background-image: url('fondoClaro.png');
+    background-color: white;
+    color: black;
+  }
+  */
+  

@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/molecules/Header/header';
 import Header2 from './components/molecules/Header2/header2';
@@ -13,9 +12,27 @@ import Forum from './components/pages/forum';
 import Post from './components/pages/toPost.jsx';
 import PrivacyP from './components/pages/privacyp';
 import Cuenta from './components/pages/cuenta.jsx';
+import Settings from './components/pages/Settings.jsx';
 import { AuthProvider, useAuth } from './context.jsx';
 
 const App = () => {
+  /*
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("theme") || "dark";
+  });
+
+  // Aplicar el tema globalmente al cambiar
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    console.log("Current theme:", theme); // Verifica que se aplica correctamente
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  // Alternar entre los temas
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
+  };
+*/
   return (
     <AuthProvider>
       <Router>
@@ -29,9 +46,11 @@ const App = () => {
           <Route path="/post" element={<PageHeader component={<Post />} />} />
           <Route path="/privacyp" element={<TermsAndConditionsPageHeader component={<PrivacyP />} />} />
           <Route path="/cuenta" element={<PageHeader component={<Cuenta />} />} />
+          <Route path="/settings" element={<PageHeader component={<Settings />} />} />
         </Routes>
       </Router>
     </AuthProvider>
+    
   );
 };
 
