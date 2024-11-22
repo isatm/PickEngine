@@ -1,12 +1,9 @@
-import './CustomButton.css' 
-import { Link } from 'react-router-dom';
+import './CustomButton.css';
 
-export default function CustomButton({ text, redirect }) {
+export default function CustomButton({ text, onClick }) {
   return (
-    <Link to={redirect}>
-      <button>
-          { text }
-      </button>
-    </Link>
-  )
+    <button className="custom-button" onClick={onClick}>
+      {text}
+    </button>
+  );
 }

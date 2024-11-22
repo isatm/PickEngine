@@ -1,48 +1,62 @@
-import './3d.css'
+import './3d.css';
+import { useState } from 'react';
+
+import Auto3D from '/Auto3D.png';
+import Carrocería from '/Carrocería.png';
+import Suspension from '/s.png';
+import Spray from '/spray.png';
+
+import ButtonImage from '../atoms/ButtonImage/buttonImage';
+import BodyWork from '../molecules/BodyWork/bodyWork';
 
 export default function IA() {
-    return (
-        <div className="container">
-            <main>
-                <section className="car-section">
-                    <div className="likes">
-                        <span className="heart-icon">❤️</span>
-                        <span className="like-count">1</span>
-                    </div>
-                    <h2>Porsche</h2>
-                    <img src="/car.png" alt="Porsche Car" className="car-image" />
-                </section>
-                <section className="options">
-                    <div className="option">
-                        <img src="/spray.png" alt="Paint Icon" />
-                        <p>Paint</p>
-                    </div>
-                    <div className="option">
-                        <img src="/carroceria.png" alt="Body Icon" />
-                        <p>Body</p>
-                    </div>
-                    <div className="option">
-                        <img src="/s.png" alt="Parts Icon" />
-                        <p>Parts</p>
-                    </div>
-                </section>
+  // Estado para controlar qué componente se debe mostrar
+  const [selectedComponent, setSelectedComponent] = useState(null);
 
-                <div className="search-gallery-container">
-                    <section className="search-section">
-                        <input type="text" placeholder="Please enter" className="search-input" />
-                        <span className="search-icon">🔍</span>
-                    </section>
+  return (
+    <main className="general3d">
+      {/* Imagen fija del auto */}
+      <section className="car3d">
+        <img src={Auto3D} alt="Auto3D" className="car3D-image" />
+      </section>
 
-                    <section className="gallery-section">
-                        {Array(6).fill().map((_, index) => (
-                            <div key={index} className="gallery-item">
-                                <img src="/car.png" alt="Car Model" className="gallery-car-image" />
-                                <span className="heart-icon">❤️</span>
-                            </div>
-                        ))}
-                    </section>
-                </div>
-            </main>
+      {/* Mostrar los botones principales solo si no hay un componente dinámico */}
+      {!selectedComponent && (
+        <section className="buttomsPersonalize">
+          <ButtonImage
+            image={Carrocería}
+            altText="Carrocería"
+            onClick={() => setSelectedComponent('carroceria')}
+          />
+          <ButtonImage
+            image={Suspension}
+            altText="Suspensión"
+            onClick={() => setSelectedComponent('suspension')}
+          />
+          <ButtonImage
+            image={Spray}
+            altText="Spray"
+            onClick={() => setSelectedComponent('spray')}
+          />
+        </section>
+      )}
+
+      {/* Componente dinámico basado en el botón seleccionado */}
+      {selectedComponent === 'carroceria' && (
+        <BodyWork onBack={() => setSelectedComponent(null)} />
+      )}
+      {selectedComponent === 'suspension' && (
+        <div className="dynamic-content">
+          <button onClick={() => setSelectedComponent(null)}>Volver</button>
+          <p>Componente de Suspensión (en construcción)</p>
         </div>
-    );
+      )}
+      {selectedComponent === 'spray' && (
+        <div className="dynamic-content">
+          <button onClick={() => setSelectedComponent(null)}>Volver</button>
+          <p>Componente de Spray (en construcción)</p>
+        </div>
+      )}
+    </main>
+  );
 }

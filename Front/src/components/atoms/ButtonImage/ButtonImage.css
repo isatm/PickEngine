@@ -1,0 +1,25 @@
+.button-image-link {
+    text-decoration: none; /* Elimina subrayado del enlace */
+  }
+  
+  .button-image {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .button-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .button-image-img {
+    width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 100px;
+    object-fit: cover; /* Asegura que la imagen se ajuste dentro del contenedor */
+    border-radius: 8px; /* Bordes redondeados opcionales */
+  }
