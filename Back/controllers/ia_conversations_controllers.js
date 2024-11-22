@@ -6,14 +6,24 @@ const hf = new HfInference(process.env.HF_TOKEN)
 export const askQuestion = async (req, res) => {
     const { question } = req.body;
     try {
+        const prompt = `You are an expert in cars and all types of car repair and mechanics. You have extensive knowledge about different car models, their parts, and how to fix common and uncommon issues. You can provide detailed explanations and step-by-step guides for diagnosing and repairing car problems. You are also familiar with the latest advancements in automotive technology and can offer advice on maintenance and upgrades. Please answer the following question from the user: "${question}"`;
+        console.log(question);
+
         const response = await hf.textGeneration({
             model: 'Qwen/Qwen2.5-Coder-32B-Instruct',
-            //inputs: `Responde como un amigo cercano y amigable. Pregunta: "${question}"`,
-            inputs: "You are a virtual tour guide from 1901. You have tourists visiting Eiffel Tower. Describe Eiffel Tower to your audience. Begin with 1. Why it was built 2. Then by how long it took them to build 3. Where were the materials sourced to build 4. Number of people it took to build 5. End it with the number of people visiting the Eiffel tour annually in the 1900's, the amount of time it completes a full tour and why so many people visit this place each year. Make your tour funny by including 1 or 2 funny jokes at the end of the tour. Give me only your response. Return as a JSON object.",
+            inputs: prompt,
             temperature: 0.1,
-        })
-        res.json(response);
-        console.log(response);
+        });
+
+        let generatedText = response.generated_text;
+        if (generatedText.includes('.\n\nCertainly!')) {
+            generatedText = generatedText.split('.\n\nCertainly!')[1].trim();
+        } else {
+            generatedText = generatedText.trim();
+        }
+        console.log(generatedText);
+
+        res.json({ answer: generatedText });
     } catch (error) {
         res.json({ error: error.message });
     }
