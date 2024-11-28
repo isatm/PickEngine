@@ -1,7 +1,7 @@
 import './3d.css';
 import { useState } from 'react';
 
-import Auto3D from '/Auto3D.png';
+import Auto1 from '/Auto1.png';
 import Carrocería from '/Carrocería.png';
 import Suspension from '/s.png';
 import Spray from '/spray.png';
@@ -10,17 +10,22 @@ import ButtonImage from '../atoms/ButtonImage/buttonImage';
 import BodyWork from '../molecules/BodyWork/bodyWork';
 
 export default function IA() {
-  // Estado para controlar qué componente se debe mostrar
-  const [selectedComponent, setSelectedComponent] = useState(null);
+  const [selectedComponent, setSelectedComponent] = useState(null); // Controla qué componente mostrar
+  const [mainImage, setMainImage] = useState(Auto1); // Imagen principal del carro
+
+  // Función para cambiar la imagen principal desde BodyWork
+  const handleBodyWorkImageChange = (newImage) => {
+    setMainImage(newImage);
+  };
 
   return (
     <main className="general3d">
       {/* Imagen fija del auto */}
       <section className="car3d">
-        <img src={Auto3D} alt="Auto3D" className="car3D-image" />
+        <img src={mainImage} alt="Auto3D" className="car3D-image" />
       </section>
 
-      {/* Mostrar los botones principales solo si no hay un componente dinámico */}
+      {/* Botones principales */}
       {!selectedComponent && (
         <section className="buttomsPersonalize">
           <ButtonImage
@@ -43,7 +48,10 @@ export default function IA() {
 
       {/* Componente dinámico basado en el botón seleccionado */}
       {selectedComponent === 'carroceria' && (
-        <BodyWork onBack={() => setSelectedComponent(null)} />
+        <BodyWork
+          onBack={() => setSelectedComponent(null)}
+          onSelectImage={handleBodyWorkImageChange} // Pasar la función para actualizar la imagen
+        />
       )}
       {selectedComponent === 'suspension' && (
         <div className="dynamic-content">
