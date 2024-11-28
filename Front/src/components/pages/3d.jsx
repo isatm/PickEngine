@@ -3,6 +3,8 @@ import { useState } from 'react';
 
 import Auto1 from '/Auto1.png';
 import Carrocería from '/Carrocería.png';
+import configuracion3D from '/configuracion3D.png'
+import reiniciar3D from '/reiniciar3D.png'
 import Suspension from '/s.png';
 import Spray from '/spray.png';
 
@@ -20,6 +22,16 @@ export default function IA() {
 
   return (
     <main className="general3d">
+      <section className="header3D">
+        <ButtonImage
+          image={configuracion3D}
+          altText="Carrocería"
+        />
+        <ButtonImage
+          image={reiniciar3D}
+          altText="Carrocería"
+        />
+      </section>
       {/* Imagen fija del auto */}
       <section className="car3d">
         <img src={mainImage} alt="Auto3D" className="car3D-image" />
