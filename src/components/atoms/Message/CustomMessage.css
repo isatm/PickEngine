@@ -1,0 +1,25 @@
+.generalMessage{
+    background-color: #292525;;
+    .headerMessage {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .image {
+            margin: 8px;
+            width: 40px;
+            height: 40px;
+        }
+        h2{
+            font-family: Trebuchet MS, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            color: #eee8e8;
+        }
+    }
+    .textoMessage{
+        background-color: #faf2a9; 
+        border-radius: 8px; 
+        padding: 10px; 
+        max-width: 400px;
+    }
+}

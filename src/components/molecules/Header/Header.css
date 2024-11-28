@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between; /* Espacia los elementos */
+  align-items: center; /* Alinea verticalmente los elementos */
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  background-color: #343a40;
+  color: white;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.logo-container {
+  flex: 1; /* Ocupa espacio hacia la izquierda */
+}
+
+.logo {
+  height: 50px; /* Tamaño del logo */
+}
+
+.nav-items {
+  flex: 2; /* Ocupa más espacio en el centro */
+  display: flex;
+  justify-content: center; /* Centra los textos horizontalmente */
+  gap: 20px;
+}
+
+.nav-item {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.profile-container {
+  flex: 1; /* Ocupa espacio hacia la derecha */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-pic {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%; /* Hace la imagen circular */
+}

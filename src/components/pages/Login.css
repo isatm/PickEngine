@@ -1,0 +1,83 @@
+.login-body {
+    background-image: url('/fondo.jpeg');
+    background-size: auto;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;     /* Centrar verticalmente */
+    height: 100vh;           /* Ocupa toda la altura de la pantalla */
+    margin: 0;               /* Elimina los márgenes del body */  
+    font-family: Arial, sans-serif; /* Aplica la fuente Poppins */
+  }
+.iniciar-secion{
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+  
+.btn{
+    margin-left: 12px;
+}
+
+.form-signin {
+    font-family: Arial, sans-serif; /* Aplica la fuente Poppins */
+    max-width: 500vh; 
+    padding: 7rem;
+    background-color: #4F4F4F;  
+    border-radius: 10px;      /* Bordes redondeados */
+    margin-right: 650px;
+    width: 440px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-weight: 600; /* Peso de la fuente para encabezados */
+    font-family: Arial, sans-serif; /* Aplica la fuente Poppins */
+
+}
+
+.input-style input {
+    border: 2px solid #939ca5;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif; /* Aplica la fuente Poppins */
+    background-color: #f8f9fa;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-style input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    font-family: Arial, sans-serif; /* Aplica la fuente Poppins */
+    outline: none;
+}
+
+
+.form-floating {
+    margin-bottom: 3rem;
+    width: 200px;
+}
+
+.form-check {
+    margin-bottom: 1.5rem;
+}
+
+.form-check-label{
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+    height: 10vh;
+}
+
+.text-start {
+    text-align: left;
+}
+  

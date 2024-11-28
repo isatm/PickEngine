@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './MisChats.css';
 
 const MisChats = () => {
   const [chats] = useState([
-    { id: 1, name: 'Juan Pérez', lastMessage: 'Hola, ¿cómo estás?' },
-    { id: 2, name: 'María Gómez', lastMessage: '¿Cuándo podemos hablar?' },
-    { id: 3, name: 'Carlos Martínez', lastMessage: 'Gracias por tu ayuda' },
+    { id: 1, name: 'Juanma', lastMessage: 'Hola, ¿cómo estás?' },
+    { id: 2, name: 'Jerozzzzz', lastMessage: '¿Cuándo podemos hablar?' },
+    { id: 3, name: 'Stiven Alejandro', lastMessage: 'Gracias por tu ayuda' },
   ]);
   const [selectedChat, setSelectedChat] = useState(null);
   const [messages, setMessages] = useState({
@@ -40,8 +40,8 @@ const MisChats = () => {
     const updatedMessages = [...messages[selectedChat]];  // Copia los mensajes
     updatedMessages[editingIndex] = currentMessage;  // Actualiza el mensaje editado
     setMessages({ ...messages, [selectedChat]: updatedMessages });
-    setEditingIndex(null);  // Limpia el estado de edición
-    setCurrentMessage('');  // Limpia el campo de entrada
+    setEditingIndex(null); 
+    setCurrentMessage('');  
   };
 
   const deleteMessage = (index) => {
