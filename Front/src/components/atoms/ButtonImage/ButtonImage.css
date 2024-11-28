@@ -12,6 +12,7 @@
     width: 120px;
     height: 120px;
     transition: transform 0.2s ease;
+    object-fit: contain;
   }
   
   .button-image:hover {

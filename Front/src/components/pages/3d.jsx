@@ -21,22 +21,23 @@ export default function IA() {
   };
 
   return (
-    <main className="general3d">
-      <section className="header3D">
-        <ButtonImage
-          image={configuracion3D}
-          altText="Carrocería"
-        />
-        <ButtonImage
-          image={reiniciar3D}
-          altText="Carrocería"
-        />
+    <main className="general3d"> 
+      <section className='taller3D'>
+        <section className="header3D">
+          <ButtonImage
+            image={configuracion3D}
+            altText="Carrocería"
+          />
+          <ButtonImage
+            image={reiniciar3D}
+            altText="Carrocería"
+          />
+        </section>
+        {/* Imagen fija del auto */}
+        <section className="car3d">
+          <img src={mainImage} alt="Auto3D" className="car3D-image" />
+        </section>
       </section>
-      {/* Imagen fija del auto */}
-      <section className="car3d">
-        <img src={mainImage} alt="Auto3D" className="car3D-image" />
-      </section>
-
       {/* Botones principales */}
       {!selectedComponent && (
         <section className="buttomsPersonalize">

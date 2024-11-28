@@ -1,16 +1,27 @@
-.general3d{
-    .header3D{
+.general3d {
+    .taller3D{
+        background-image: url('./fondo3D.avif'); 
+        background-size: cover; 
+        background-position: center; 
+    }
+
+    .header3D {
         display: flex;
         justify-content: space-between; 
-        align-items: center
+        align-items: center;
     }
-    .car3d{
+    .car3d {
         display: flex;
         justify-content: center; 
         align-items: center;
-        img{
-            max-width: 35%;
-            height: auto; 
+        width: 100%; 
+        height: auto; 
+        
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 600px;
+            max-height: 600px;
         }
     }
     .buttomsPersonalize {
