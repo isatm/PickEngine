@@ -10,6 +10,7 @@ import Spray from '/spray.png';
 
 import ButtonImage from '../atoms/ButtonImage/buttonImage';
 import BodyWork from '../molecules/BodyWork/bodyWork';
+import Models3D from '../molecules/3DModels/tabsComponent'
 
 export default function IA() {
   const [selectedComponent, setSelectedComponent] = useState(null); // Controla qué componente mostrar
@@ -78,6 +79,11 @@ export default function IA() {
           <p>Componente de Spray (en construcción)</p>
         </div>
       )}
+
+
+      <section className='Comunidad3D'>
+        <Models3D />
+      </section>
     </main>
   );
 }

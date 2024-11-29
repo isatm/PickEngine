@@ -20,7 +20,7 @@
   }
   
   .button-image-img {
-    width: 100%; /* Ajusta el tamaño de la imagen según sea necesario */
+    width: 150%; /* Ajusta el tamaño de la imagen según sea necesario */
     height: 100%;
     object-fit: cover; /* Asegura que la imagen se ajuste dentro del contenedor */
     border-radius: 8px; /* Bordes redondeados opcionales */

@@ -1,6 +1,6 @@
 import './BodyWork.css';
 import Auto1 from '/Auto1.png'
-import Auto2 from '/Auto2.png';
+import Auto2 from '/Auto2.webp';
 import Auto3 from '/Auto3.png';
 import Auto4 from '/Auto4.png';
 import Auto5 from '/Auto5.png';

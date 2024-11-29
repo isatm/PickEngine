@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
+    border-radius: 10px; /* Esquinas redondeadas */
     input{
         width: 600px;
     }

@@ -1,4 +1,5 @@
 .bodysWorks{
+    background-image: url('./Banner3D.png'); 
     display: flex;
     flex-direction: row;
     align-items: center;
