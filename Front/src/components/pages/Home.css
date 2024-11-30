@@ -1,29 +1,66 @@
+/* General Carrusel Styles */
+.carrusel {
+    position: relative;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 90vh; /* Mantiene la altura de las secciones */
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carrusel-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Animación suave para transiciones */
+    height: 100%; /* Asegura que las slides ocupen toda la altura */
+  }
+  
+  .slide {
+    flex: 0 0 100%; /* Cada slide ocupa el 100% del ancho del carrusel */
+    height: 100%;
+    display: none; /* Ocultamos las slides no activas */
+  }
+  
+  .slide.active {
+    display: block; /* Solo mostramos la slide activa */
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    transform: translateY(-50%);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+
+  }
+  
+
 .home-body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #2b2424; 
 }
 
-.body-container-IA {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    height: 90vh;
-}
-
-.body-container-3D {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-}
-
+.body-container-IA,
+.body-container-3D,
 .body-container-CHAT {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 90vh;
 }
+.arrow.left {
+    left: 5%;
+  }
+  
+  .arrow.right {
+    right: 5%;
+  }
+  
 
 .image-container-IA{
     position: relative;
@@ -37,7 +74,7 @@
     overflow: hidden; 
     display: flex;
     justify-content: flex-end; 
-    align-items: center;
+    align-items: end;
     padding: 20px;
 }
 
@@ -52,9 +89,10 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
     overflow: hidden; 
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     align-items: center;
     padding: 20px;
+    
 }
 
 .image-container-CHAT{
@@ -78,8 +116,8 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 40%; 
-    margin-top: 50px;
-    margin-right: 30px;
+    margin-bottom: 12%;
+    margin-right: 2%;
 }
 
 .content-3D {
@@ -88,8 +126,9 @@
     justify-content: flex-start;
     width: 40%; 
     margin-top: 50px;
-    margin-right: 700px;
+    margin-right: 55%;
 }
+
 
 .content-CHAT {
     display: flex;
@@ -101,12 +140,14 @@
 }
 
 .title {
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 20px;
-    font-size: 60px;
+    font-size: 50px;
     color: #fff; 
 }
 
 .description {
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 50px;
     font-size: 20px;
     color: #fff; 
@@ -124,6 +165,6 @@
   }
   
   .start-button:hover {
-    background-color: #0056b3;
+    background-color: #ffffff;
+    color: #007bff;
   }
-

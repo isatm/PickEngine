@@ -29,6 +29,11 @@ const Header2 = () => {
             <p>3D Model</p>
           </Link>
         </div>
+        <div className="nav-item">
+          <Link to='/marketplace'>
+            <p>MarketPlace</p>
+          </Link>
+        </div>
       </div>
 
       <div className="login-register-container">

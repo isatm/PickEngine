@@ -1,103 +1,40 @@
-.container {
-    background-color: #4d4d4d;
-    color: white;
-    font-family: Arial, sans-serif;
-    flex: 1; /* Ocupa el espacio restante */
-    width: 100%; /* Ajusta al ancho del contenedor */
-}
+.general3d {
+    .taller3D{
+        background-image: url('./fondo3D.avif'); 
+        background-size: cover; 
+        background-position: center; 
+    }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #4d4d4d;
-}
+    .header3D {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+    }
+    .car3d {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        width: 100%; 
+        height: auto; 
+        
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 600px;
+            max-height: 600px;
+        }
+    }
+    .buttomsPersonalize {
+        background-image: url('./Banner3D.png'); 
+        background-color: rgb(53, 53, 53);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px; 
+    }
 
-.car-section {
-    background-color: #fff;
-    color: #333;
-    padding: 20px;  
-    border-radius: 8px;
-    text-align: center;
-    width: 80%;
-    margin-top: 2vh;
-}
-
-.car-image {
-    width: 100%;
-    height: auto;
-    margin-top: 15px;
-}
-
-.options {
-    display: flex;
-    justify-content: space-around;
-    width: 60%;
-    margin-top: 20px;
-}
-
-.option {
-    text-align: center;
-}
-
-.option img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
-}
-
-.search-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.search-input {
-    width: 300px;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-}
-
-.search-icon {
-    margin-left: -30px;
-    font-size: 18px;
-    color: #333;
-}
-
-.gallery-section {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.gallery-item {
-    background-color: #fff;
-    color: #333;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-    width: 150px;
-    position: relative;
-}
-
-.gallery-car-image {
-    width: 100%;
-    height: auto;
-}
-
-.likes {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.search-gallery-container {
-    width: 60%;
-    background-color: #333;
-    border-radius: 8px;
-    padding: 20px;
-    margin-top: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    .Comunidad3D{
+        background-color: transparent;
+    }
 }

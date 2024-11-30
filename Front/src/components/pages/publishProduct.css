@@ -1,0 +1,75 @@
+.publishProduct {
+    background-image: url("/public/fondoForum.png");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.formContainer {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.publishProduct h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.publishProduct .formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.publishProduct label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.publishProduct input, .publishProduct textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    width: 100%; /* Ensure inputs and textarea take full width */
+}
+
+.publishProduct input[type="file"] {
+    padding: 3px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.publishProduct button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.publishProduct button:hover {
+    background-color: #218838;
+}

@@ -1,12 +1,20 @@
+import "./Login.css";
 import { useState } from 'react';
 import { Link, redirect } from 'react-router-dom';
 import axios from 'axios';
-import "./Login.css";
 import CustomButton from '../atoms/Button/CustomButton';
+import { useAuth } from '../../context';
 
 const AUTH_URL = 'http://127.0.0.1:3000/auth/login/';
 
 export default function Login() {
+    const { login } = useAuth();
+
+    const handleLogin = () => {
+    login(); 
+    };
+
+
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [rememberMe, setRememberMe] = useState(false);
@@ -67,14 +75,18 @@ export default function Login() {
                         </label>
                     </div>
                     <div className="button-container">
-                    <Link to="/forum">
-                        <button onClick={handleSubmit}>Sign in</button>
-                    </Link> 
-                    <Link to="/register">
-                        <CustomButton
-                            text = {"Sign up"}
-                        />
-                    </Link>
+                        <div className="buttonLogin">
+                            <Link to="/forum">
+                                <button onClick={() => { handleSubmit(); handleLogin(); }}>Sign in</button>
+                            </Link> 
+                        </div>
+                        <div className="buttonLogin">
+                            <Link to="/register">
+                                <CustomButton
+                                    text = {"Sign up"}
+                                />
+                            </Link>
+                        </div>
                     </div>
                 </form>
             </main>
@@ -82,13 +94,3 @@ export default function Login() {
     </body>
   );
 }
-
-
-/*<div className="d-flex justify-content-around">
-                <button className="btn" type="button">
-                <i className="fab fa-facebook-f"></i> 
-                </button>
-                <button className="btn" type="button">
-                <i className="fab fa-google"></i> 
-                </button>
-            </div>*/ 

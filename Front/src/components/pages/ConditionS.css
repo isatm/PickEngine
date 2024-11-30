@@ -1,0 +1,7 @@
+.generalCondition {
+    background-color: #2b2424;  /* Puedes cambiar este color por el que desees */
+    min-height: 100vh;
+    .HeaderCondition{
+        width: 100%;
+    }
+}

@@ -1,0 +1,40 @@
+.product-card {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+}
+
+.product-card img {
+    max-width: 100%;
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #ffaa00;
+}
+
+.product-card button {
+    background-color: #ffaa00;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #ff7700;
+}
