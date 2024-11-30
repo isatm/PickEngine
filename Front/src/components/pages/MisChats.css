@@ -1,0 +1,141 @@
+
+.chats-page {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    h1{
+      color: white;
+    }
+  }
+  
+  .chat-item {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .chat-item:hover {
+    background-color: #f0f0f0;
+  }
+  h1{
+    text-align: center;
+  }
+  .chat-item h2 {
+    font-size: 1.5rem;
+    color: black;
+  }
+  
+  .chat-item p {
+    color: #666;
+  }
+  
+  .chat-window {
+    text-align: left;
+    flex-grow: 0.5;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .back-button {
+  margin-top: 10px;
+  background-color: black;
+  
+  }
+  
+  .back-button:hover {
+    background-color: black
+  }
+  
+  .message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 0;
+    margin-left: auto; /* Esto mueve el botón a la derecha */
+  }
+  
+  .menu-options {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .menu-options button {
+    background-color: transparent;
+    width: auto;
+  }
+  .bMenuChats{
+    width: auto;
+  }
+  .menu-options button:hover {
+    background-color: #f0f0f0;
+  }
+  .messages {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+  }
+  
+  
+  .chat-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    position: sticky;
+    bottom: 0;
+  }
+  
+  .chat-bar input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+  
+  .chat-bar button {
+    margin-top: 10px;
+    background-color: black;
+    width: auto;
+  
+  }
+  
+  .chat-bar button:hover {
+    background-color: black;
+  }

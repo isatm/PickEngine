@@ -6,4 +6,19 @@
   text-align: center;
   padding: 10px 0; 
   width: 100%;
+  .links{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    a{
+      color: white;
+      text-decoration: none; 
+      border-radius: 5px; 
+    }
+    a:hover{
+      color: #333; 
+      background-color: #FFD700;
+    }
+  }
 }

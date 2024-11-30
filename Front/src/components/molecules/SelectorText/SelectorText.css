@@ -1,0 +1,55 @@
+.app-container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 200px;
+    padding: 20px;
+    background-color:white;
+    position: sticky;
+    top: 0;
+    height: calc(100vh - 140px); 
+    overflow-y: auto; 
+  }
+  
+  .sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar nav ul li a {
+    text-decoration: none;
+    color: #f5bc00;
+    font-weight: bold;
+  }
+  
+  .sidebar nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .contentS {
+    font-family: Verdana;
+    font-size: 14px;
+    background-color: white;
+    padding: 20px;
+    max-width: 800px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .contentS section {
+    margin-bottom: 50px;
+    max-width: 800px; 
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+  
+  .contentS section h2 {
+    color: #333;
+    font-size: 1.5em;
+  }

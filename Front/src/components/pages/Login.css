@@ -1,6 +1,8 @@
 .login-body {
     background-image: url('/fondo.jpeg');
-    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     display: flex;
     justify-content: center; /* Centrar horizontalmente */
     align-items: center;     /* Centrar verticalmente */
@@ -26,8 +28,8 @@ form{
 .form-signin {
     font-family: Arial, sans-serif; /* Aplica la fuente Poppins */
     max-width: 500vh; 
-    padding: 7rem;
-    background-color: #4F4F4F;  
+    padding: 5%;
+    background-color: #424242;  
     border-radius: 10px;      /* Bordes redondeados */
     margin-right: 650px;
     width: 440px;
@@ -80,4 +82,3 @@ h1 {
 .text-start {
     text-align: left;
 }
-  

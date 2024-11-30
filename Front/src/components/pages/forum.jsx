@@ -17,7 +17,12 @@ export default function Forum() {
                     />
                     
                     <Chat/>
-                    
+                    <div className="bChats">
+                        <CustomButton
+                        text={"Mis chats"}
+                        redirect={"/chats"}
+                        />
+                    </div>
                 </div>
             </section>
             <section className = 'publicaciones'>
