@@ -49,21 +49,3 @@
         margin: 15px;
     }
 }
-.profile-pick-btn{
-    border-radius: 200px;
-    padding: 0px;
-    border: none;
-}
-.usuario-name{
-    display: flex;
-    align-items: center;
-}
-.btn-icon-edit{
-    border: none;
-}
-.edit-log{
-    border: none;
-    background-color: transparent;
-    padding: 0%;
-    width: 20px;
-}

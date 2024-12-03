@@ -2,7 +2,7 @@ import './Post.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-export default function Post({ Name, Text, Logo, Fecha, ProfilePic }) {
+export default function Post({ Name, Text, Logo, Fecha}) {
     // Estados para manejar comentarios, likes, dislikes y menú desplegable
     const [comment, setComment] = useState('');
     const [comments, setComments] = useState([]);
@@ -66,7 +66,7 @@ export default function Post({ Name, Text, Logo, Fecha, ProfilePic }) {
             {/* Encabezado del post */}
             <header className="headerPost">
                 <div className="postUsuario">
-                    <img src={ProfilePic} alt={`${Name}'s avatar`} className="imageAvatar" />
+                    <img src="Avatar.png" alt={`${Name}'s avatar`} className="imageAvatar" />
                     <Link to="/cuenta">
                         <h2>{Name}</h2>
                     </Link>
